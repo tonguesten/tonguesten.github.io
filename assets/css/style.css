@@ -1,0 +1,576 @@
+/*
+------------
+GLOBAL
+------------
+*/
+html,
+body {
+	height: 100%;
+	max-height: 100%;
+	overflow-y: visible; 
+	
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	cursor:default;
+}
+
+p {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/*
+------------
+ELEMENTS
+------------
+*/
+
+/*NAVIGATION BLUE BAR*/
+
+#blue-bar{
+	position: fixed; 
+	z-index: 10;
+	width: 100%;
+	height: 60px;
+}
+
+#full-logo{
+	position: relative;
+	width: 180px;
+	height:90px;
+	padding-right: 5px;
+	border-radius: 0px 50px 50px 0px ;
+}
+
+
+#logo{
+ 	width:150px;
+ 	position:relative;
+ 	display: inline-block;
+ 	top:2px;
+ 	margin-bottom: 5px;
+ 	left:15px;
+}
+
+#nav-buttons{
+	position: absolute;
+	float: left;
+	left: 192px;
+	top:29px;
+}
+
+#featuresBut{
+	width:70px;
+	height: 60px;
+	position: relative;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+#wir{
+	width:150px;
+	height: 60px;
+	position: relative;
+	display: inline-block;
+	
+}
+
+#aboutBut{
+	width:70px;
+	height: 60px;
+	position: relative;
+	display: inline-block;
+}
+
+
+#social{
+	position: absolute;
+	float: right;
+	width:90px;
+	right: 10px;
+	top:15px;
+}
+
+#tumblr{
+	position: relative;
+	display: inline-block;
+	background: no-repeat url(../img/tumblr.png);
+	width: 25px;
+	height: 25px;
+}
+
+#facebook{
+	position: relative;
+	display: inline-block;
+	background: no-repeat url(../img/facebook.png);
+	width: 25px;
+	height: 25px;
+}
+
+#twitter{
+	position: relative;
+	display: inline-block;
+	background: no-repeat url(../img/twitter.png);
+	width: 25px;
+	height: 25px;
+}
+
+/*FIRST SECTION*/
+
+#first{
+	width: 100%;
+	height: 680px;
+	z-index: 9;
+}
+
+#content{
+	width:90%;
+	height:85%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 80px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+#rebLogo{
+	width: 240px;
+	position: relative;
+	display: inline-block;
+	top:15px;
+	margin-bottom: 30px;
+}
+
+#product{
+	width:45%;
+	position: relative;
+	display: block;
+	left: 27.5%;
+}
+
+#title{
+	width:100%;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+}
+
+#cta-button{
+	width:100%;
+	height:65px;
+	position: relative;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	text-align:center;
+}	
+
+
+.tryBut {
+	width: 350px;
+	border-radius: 7px;
+	display:inline-block;
+	height:65px;
+	line-height:61px;
+	text-align:center;
+}
+
+.tryBut:hover{ 
+	position:relative;
+}
+
+
+/*SECOND SECTION*/
+
+#second{
+	width: 100%;
+	height: 680px;
+	position: absolute;
+	top:700px;
+}
+
+#features-title{
+	width:20%;
+	position: relative;
+	left:40%;
+	top:75px;
+}
+
+#features{
+	width: 90%;
+	height:60%;
+	position: relative;
+	float: left;
+	left: 5%;
+	top:150px;
+}
+
+#featBox{
+	width: 33%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#photo1{
+	width:37%;
+	min-width: 150px;
+	height:90%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom:10px; 
+}
+
+#photo1:hover{
+	width:39%;
+}
+
+#photo2{
+	width:80%;
+	min-width: 280px;
+	height:90%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#photo2:hover{
+	width:82%;
+
+}
+
+#feaText{
+	width:80%;
+	height:10%;
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
+/*THIRD SECTION*/
+
+#third{
+	width: 100%;
+	height: 680px;
+	position: absolute;
+	top:1360px;
+}
+
+#box{
+	width:90%;
+	height: 85%;
+	position:relative;
+	top:12.5%;
+	left:5%;
+}
+
+#content1{
+	width: 90%;
+	height: 130px;
+	position: relative;
+	left:5%;
+	margin:5px;
+}
+
+#text1{
+	width: 70%;
+	height: 100%;
+	position: relative;
+	float: left;
+	display: inline-block;
+	padding-top: 60px;
+}
+
+#pic1{
+	width:30%;
+	height: 100px;
+	position: relative;
+	float:right;
+	display: inline-block;
+}
+
+#content2{
+	width: 90%;
+	height: 130px;
+	position: relative;
+	left: 5%;
+	margin:5px;
+}
+
+#text2{
+	width: 70%;
+	height: 100%;
+	position: relative;
+	float: right;
+	display: inline-block;
+	padding-top: 60px;
+}
+
+#pic2{
+	width:30%;
+	height: 100px;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+#content3{
+	width: 90%;
+	height: 130px;
+	position: relative;
+	left:5%;
+	margin:5px;
+}
+
+#text3{
+	width: 70%;
+	position: relative;
+	float: left;
+	display: inline-block;
+	padding-top: 60px;
+}
+
+#pic3{
+	width:30%;
+	height: 100px;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+/*FOURTH SECTION*/
+
+#fourth{
+	width: 100%;
+	height: 680px;
+	position: absolute;
+	text-align: center;
+	top:2040px;
+}
+
+#fcontainer{
+	width:75%;
+	position: relative;
+	display: inline-block;
+	padding-top:100px;
+	padding-bottom: 10px;
+}
+
+#who{
+	margin-bottom:15px; 
+}
+
+#scontainer{
+	width:75%;
+	position: relative;
+	display: inline-block;
+	margin-top:10px;
+}
+
+#quotes{
+	width:100%;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.quote{
+	width:350px;
+	position: relative;
+	display: inline-block;
+	padding:10px;
+	padding-bottom: 70px;
+}
+.img img{
+	width: 100%;
+	border-radius: 100px; /*half of the width of the image - less would round off corners*/
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	opacity: 0.8;
+}
+
+.img{
+	width:25%;
+	position: relative;
+	display: inline-block;
+	top:50px;
+	
+}
+
+#txt{
+	width:65%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*ABOUT SECTION*/
+#about{
+	width: 90%;
+	height: 600px;
+	position: absolute;
+	left:5%;
+	z-index: 9;
+	top:60px;
+}
+
+#teamTitle{
+	width: 80%;
+	min-width:500px;
+	position: relative;
+	left:10%;
+	top: 50px;
+}
+
+#pics{
+	width:80%;
+	height:32.5%;
+	position: relative;
+	left:10%;
+	top:100px;
+}
+
+.col {
+	width: 19.5% ;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#about img{
+	width: 65%;
+	border-radius: 70px; /*half of the width of the image - less would round off corners*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 17.5%;
+	margin-right: 17.5%;
+	opacity: 0.6;
+}
+
+#about img:hover{
+	opacity: 1;
+}
+
+
+
+
+/*
+------------
+COLORS & DECO
+------------
+*/
+
+/*Nav blue bar*/
+
+#blue-bar{
+	background: #009AFF;
+	border-bottom:2px solid #fff;
+}
+
+#full-logo{
+	background: #fff;
+}
+
+
+.tNavButton{
+	color: #fff;
+	opacity: 0.9;
+}
+
+/*first section*/
+
+#main-title{
+	color: #515256;
+}
+
+#cta{
+	color: #515256;
+}
+
+
+.tNormal{
+	color: rgba(81,82,86,0.95);
+}
+
+.tryBut {
+	background-color:#009AFF;
+	color:#fff;
+	border:1px solid #009AFF;
+}
+
+.tryBut:hover {
+	background-color:rgba(0,154,255,0.8);
+}
+
+/*second section*/
+
+#second{
+	background: #009AFF;
+}
+
+#features{
+	color: #fff;
+}
+
+#feaText{
+	opacity: 0.9;
+}
+
+/*third section*/
+
+#third{
+	background: #009AFF;
+}
+
+.tText{
+	color: #fff;
+}
+
+/*fourth section*/
+
+#quotes{
+	color: #5B5C60;
+}
+
+.tSign{
+	color:  #7c7c7c;
+}
+
+/*about section*/
+
+#about{
+	background-color:rgba(255,255,255,0.95);
+}
+
+.team{
+	color: #515256;	
+}
+
+.details{
+	color: #515256;
+}
+
+

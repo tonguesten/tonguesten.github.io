@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<title>Tonguesten</title>
+		<link rel="icon" type="image/png" href="assets/img/tonguesten-icon.png" />
+		
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<link rel='stylesheet' href='assets/css/reset.css'>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/resizes.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/typography.css" />
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+		type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+				$(function(){
+
+				     $('a[href*=#]').click(function() {
+
+				     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+				         && location.hostname == this.hostname) {
+
+				             var $target = $(this.hash);
+
+				             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+				             if ($target.length) {
+
+				                 var targetOffset = $target.offset().top;
+
+				                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+				                 return false;
+
+				            }
+
+				       }
+
+				   });
+
+				});
+		</script>
+	</head>
+
+	<body>
+		
+	<div id="blue-bar">
+	
+		<a href="#first">
+			<div id="full-logo">
+					<div id="logo"><img src="assets/img/logo-big.png"></div>
+			</div>
+		</a>
+
+		<div id="nav-buttons">
+			<a href="#second"><div id="featuresBut" class="tNavButton">Features</div></a>
+			<a href="#fourth"><div id="wir" class="tNavButton">What is ReBeats?</div></a>
+			<a href="about.html"><div id="aboutBut" class="tNavButton">Our team</div></a>
+		</div>
+
+
+		<div id="social">
+			<a href="http://www.wearet10.tumblr.com" target="_blank">
+				<div id="tumblr"></div>
+			</a>
+			<a href="https://www.facebook.com/weareT10" target="_blank">
+				<div id="facebook"></div>
+			</a>
+			<a href="https://twitter.com/weareT10" target="_blank">
+				<div id="twitter"></div>
+			</a>
+		</div>
+	</div>
+
+
+		<section id="first">
+		<a name="first"></a>	
+
+			<div id="content">
+				
+				<div id="rebLogo"><img src="assets/img/rebeats_pic.png"></div>
+				
+				<div id="product">
+						<a href="http://www.rebeats.tv" target="_blank"><img src="assets/img/foto2.png" width="400px"></a>
+				</div>
+
+				<div id="title" class="tSubtitle taCenter">Just by watching music videos with ReBeats, </br>Paolo, age 12, spends half an hour a day practising English.</div>
+	
+
+				<div id="cta-button" class="tNormalBold">
+					<a href="http://www.rebeats.tv" target="_blank" class="tryBut">Try it now - for free</a>
+				</div>
+			
+			</div>
+
+		</section>
+
+		<section id="second">
+		<a name="second"></a>
+		
+
+			<div id="features-title"><img src="assets/img/features.png"></div>
+			<div id="features">
+				<div id="featBox">
+					<a href="#third"><div id="photo1"><img src="assets/img/phone.png"></div></a>
+					<div id="feaText" class="tFeatures taCenter">Mobile, gamified, personalised learning.</div>
+				</div>
+				<div id="featBox">
+					<a href="#third"><div id="photo2"><img src="assets/img/feat2.png"></div></a>
+					<div id="feaText" class="tFeatures taCenter">Automated real time exercise creation.</div>
+				</div>
+				<div id="featBox">
+					<a href="#third"><div id="photo1"><img src="assets/img/feat3.png"></div></a>
+					<div id="feaText" class="tFeatures taCenter">Adaptive engine that learns what you need.</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="third">
+		<a name="third"></a>
+
+			<div id="box">
+				<div id="content1">
+					<div id="text1" class="tText ">ReBeats isn’t supposed to look like a lesson and it’s not meant to replace them - it’s meant to give you a great and fun way to practise reading and listening, while being exposed to real world English.</div>
+					<div id="pic1"><img src="assets/img/foto1.png"></div>
+				</div>
+
+				<div id="content2">
+					<div id="text2" class="tText taLeft">You’ll learn to recognise how words are spelt, how they fit correctly into a sentence and what they mean in context.</div>
+					<div id="pic2"><img src="assets/img/foto2.png"></div>
+				</div>
+				
+				<div id="content3">
+					<div id="text3" class="tText ">Music and having fun both help your brain to remember things much more easily and the best bit is, you won’t even know you’re learning!</div>
+					<div id="pic3"><img src="assets/img/foto3.png"></div>
+				</div>
+			</div>
+		
+		</section>
+
+		
+		<section id="fourth">
+		<a name="fourth"></a>
+
+			<div id="fcontainer">
+				<div id="who" class="tNormalBoldBig">What is ReBeats?</div>
+				<div  class="tNormal">We know that learning English can be hard and boring, so we challenged ourselves to create something so fun and easy that all the learning happens without even realising. That’s how ReBeats was born; a game that improves your English by watching your favourite music videos on YouTube - a Spotify for language learning.</div>
+			</div>
+
+			<hr align="center" width="70%" noshade size="1px">
+			
+			<div id="quotes">
+				<div class="quote">
+					<div class="img"><img src="assets/img/jo.jpg"></div>
+					<div id="txt">
+						<span class="tQuote">“Such a fantastic idea! I’ll use it with my students as soon as they’re back to class”</br></span>
+						<span class="tSign">Jo, teacher from Malaysia</span>
+					</div>
+				</div>
+				
+				<div class="quote">
+					<div class="img"><img src="assets/img/sa.jpg"></div>
+					<div id="txt">
+						<span class="tQuote">“It made English fun, it made me laugh, I liked it!”</br></span>
+						<span class="tSign">Saumia, 8 year old girl from Sri Lanka</span>
+					</div>
+				</div>
+
+				<div class="quote">
+					<div class="img"><img src="assets/img/it.jpg"></div>
+					<div id="txt">
+						<span class="tQuote">“It’s so much fun I couldn’t put it down”</br></span>
+						<span class="tSign">Giulia, language lover from Italy</span>
+					</div>
+				</div>
+			</div>
+
+			<hr align="center" width="70%" noshade size="1px">
+
+			<div id="scontainer">
+				<div  class="tNormal">Each one of us learns in his or her own ways, and the best way to learn something is to enjoy it, and to want do it again. The best learning doesn’t feel like studying at all; it just feels good. Our personal passions - whether it be music, film or football - are filled with fantastic language that can motivate us better than any coursebook. So forget studying, and start learning through what you love.</div>
+			</div>
+
+		</section>
+
+
+	</body>
+</html>

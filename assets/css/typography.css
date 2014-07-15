@@ -1,0 +1,96 @@
+/*
+------------
+TYPOGRAPHY
+------------
+*/
+
+.tSubtitle {
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+}
+
+.tNavButton{
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-size:17px;
+}
+
+.tNormalBold{
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size:18px;
+	line-height: normal;
+}
+
+h3 {
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size:18px;
+	text-align: center;
+	line-height: normal;
+}
+
+h4 {
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-size:17px;
+	text-align: center;
+	line-height: normal;
+}
+
+.tNormalBoldBig{
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size:30px;
+	line-height: normal;
+}
+
+.tNormal{
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-size:20px;
+	line-height: normal;
+}
+
+.tQuote{
+	font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size:18px;
+}
+
+.tSign{
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-size:16px;
+}
+
+.tText{
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-size:18px;
+}
+
+.tFeatures{
+	font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+	font-size:22px;
+	line-height: normal;
+}
+
+.tryBut {
+	font-family:"proxima_nova_regular", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:28px;
+}
+
+.tTeam{
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size:35px;
+}
+
+.taCenter{
+	text-align: center;
+}
+
+.taleft{
+	text-align: left;	
+}
+
+.taRight{
+	text-align: right;	
+}
