@@ -1,0 +1,97 @@
+/*
+------------
+COLORS & DECO
+------------
+*/
+
+/*Nav blue bar*/
+
+#blue-bar{
+	background: #01AAFF;
+	border-bottom:2px solid #fff;
+}
+
+#full-logo{
+	background: #fff;
+}
+
+
+.tNavButton{
+	color: #fff;
+	opacity: 0.9;
+}
+
+/*first section*/
+
+#main-title{
+	color: #515256;
+}
+
+#cta{
+	color: #515256;
+}
+
+
+.tNormal{
+	color: rgba(81,82,86,0.95);
+}
+
+.tryBut {
+	background-color:#009AFF;
+	color:#fff;
+	border:1px solid #009AFF;
+}
+
+.tryBut:hover {
+	background-color:rgba(0,154,255,0.8);
+}
+
+/*second section*/
+
+#second{
+	background: #01AAFF;
+}
+
+#features{
+	color: #fff;
+}
+
+#feaText{
+	opacity: 0.9;
+}
+
+/*third section*/
+
+#third{
+	background: #01AAFF;
+}
+
+.tText{
+	color: #fff;
+}
+
+/*fourth section*/
+
+#quotes{
+	color: #5B5C60;
+}
+
+.tSign{
+	color:  #7c7c7c;
+}
+
+/*about section*/
+
+#about{
+	background-color:rgba(255,255,255,0.95);
+}
+
+.team{
+	color: #515256;	
+}
+
+.details{
+	color: #515256;
+}
+
+
