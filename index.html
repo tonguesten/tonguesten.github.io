@@ -13,12 +13,40 @@
 		<link rel='stylesheet' href='assets/css/reset.css'>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/resizes.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/typography.css" />
+
+		<link rel="stylesheet" type="text/css" href="assets/css/mailchimp-code.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/resizes.css" />
+
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 		type="text/javascript" charset="utf-8"></script>
+
+		<script type='text/JavaScript'>
+			function showhide(identification){
+				var elemento = document.getElementById(identification);
+				//console.log(elemento);
+				if(elemento.className == "visible"){
+					elemento.className = "invisible";
+				}else{
+					elemento.className = "visible";
+				}
+			}
+
+			function newsletter (rol){
+				//var kind = document.getElementById("mc-embedded-subscribe-form");
+				//console.log(rol);
+				//console.log('kind='+kind.action);
+				if(rol == "teacher"){
+					$('#mc-embedded-subscribe-form').attr('action', "https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=c8e67946e6");
+					//console.log($('#mc-embedded-subscribe-form').attr('action'));
+				}else{
+					$('#mc-embedded-subscribe-form').attr('action', "https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c");
+				}
+			}
+		</script>
+
 		<script type="text/javascript">
 				$(function(){
 
@@ -47,6 +75,9 @@
 
 				});
 		</script>
+
+		
+	
 	</head>
 
 	<body>
@@ -58,6 +89,32 @@
 					<div id="logo"><img src="assets/img/tonguesten-logo.png"></div>
 			</div>
 		</a>
+		
+		<div id="newsletter">
+			<div id="mc_embed_signup">
+
+					<div class="visible" id="updiv">
+						<span id="word">Subscribe to our </br>newsletter</span>
+						<div id="buttons">
+						<a href="javascript:showhide ('updiv'); newsletter('teacher');">
+						<input type="submit" value="Teacher" name="teacher" class="rol">
+						</a>
+						<a href="javascript:showhide ('updiv'); newsletter('student');">
+						<input type="submit" value="Student" name="student" class="rol">
+						</a>
+						</div>
+					</div>
+
+					<form action="https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						
+						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your@emailadress.com" required>
+					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; display:inline-block; left: -5000px;"><input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value=""></div>
+					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+					</form>
+				</div>
+		</div>
 
 		<div id="nav-buttons">
 			<a href="#second"><div id="featuresBut" class="tNavButton">Features</div></a>
@@ -65,7 +122,7 @@
 			<a href="about.html"><div id="aboutBut" class="tNavButton">Our team</div></a>
 		</div>
 
-
+		
 		<div id="social">
 			<a href="http://www.wearet10.tumblr.com" target="_blank">
 				<div id="tumblr"></div>
@@ -84,7 +141,7 @@
 		<a name="first"></a>	
 
 			<div id="content">
-				
+
 				<div id="rebLogo"><img src="assets/img/rebeats_pic.png"></div>
 				
 				<div id="product">
@@ -191,6 +248,13 @@
 
 		</section>
 
-
+		<footer>
+			<div class="logos">
+				<img src="assets/img/tonguesten-logo-footer.png">
+				<a href="http://wayra.org/unltd/" target="_blank"><img src="assets/img/wayra-logo.png"></a>
+			</div>
+			<div class="rights tSmall">Copyright © 2014 Tonguesten Limited, All rights reserved. Proud member of the Wayra family. WAYRA UNLTD, 2-10 Capper St, London WC1E 6JA</div>
+			<div class="contacts tSmall">Get in touch: <a href="https://www.facebook.com/weareT10" class="white bold" target="_blank">facebook</a>, <a href="https://twitter.com/weareT10" class="white bold" target="_blank">twitter</a>, <a href="mailto:mariaz@tonguesten.com" class="white bold">email</a></div>		
+		</footer>
 	</body>
 </html>

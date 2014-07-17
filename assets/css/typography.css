@@ -49,6 +49,17 @@ h4 {
 	line-height: normal;
 }
 
+
+.tSmall{
+	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+	font-size:13px;
+	line-height: normal;
+}
+
+.bold{
+	font-weight: bold;
+}
+
 .tQuote{
 	font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
 	font-style: italic;

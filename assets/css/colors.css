@@ -3,8 +3,28 @@
 COLORS & DECO
 ------------
 */
+footer{
+	background-color: rgba(1,170,255,1);
+	color:rgba(255,255,255,1);
+	border-top-color:rgb(150,150,150);
+	border-top-width: 2px;
+	border-top-style: solid;
+}
+
+footer img{
+	opacity: 1;
+}
+
+.row{
+	color:rgba(255,255,255,1);
+}
+
+.white{
+	color:#fff;
+}
 
 /*Nav blue bar*/
+
 
 #blue-bar{
 	background: #01AAFF;
@@ -15,10 +35,28 @@ COLORS & DECO
 	background: #fff;
 }
 
+#updiv{
+		background: rgba(1,170,255,1);
+}
 
 .tNavButton{
 	color: #fff;
 	opacity: 0.9;
+}
+
+.rol:hover {
+	background-color:rgba(0,200,255,0.3); 
+	border:1px solid rgb(255,255,255);
+}
+
+.rol{
+	background-color: rgb(1,170,255); 
+	border:1px solid rgba(255,255,255,0.7);
+	color: #fff; 
+}
+
+#word{
+	color: #fff;
 }
 
 /*first section*/
@@ -57,7 +95,7 @@ COLORS & DECO
 }
 
 #feaText{
-	opacity: 0.9;
+	opacity: 0.95;
 }
 
 /*third section*/
