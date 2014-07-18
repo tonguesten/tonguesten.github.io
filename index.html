@@ -45,6 +45,12 @@
 					$('#mc-embedded-subscribe-form').attr('action', "https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c");
 				}
 			}
+
+			function show (id){
+				var elemento = document.getElementById(id);
+				elemento.className = "visible";
+				console.log(elemento);
+			}
 		</script>
 
 		<script type="text/javascript">
@@ -81,15 +87,13 @@
 	</head>
 
 	<body>
-		
-	<div id="blue-bar">
 	
-		<a href="#first">
-			<div id="full-logo">
-					<div id="logo"><img src="assets/img/tonguesten-logo.png"></div>
-			</div>
+	<div id="blue-bar">
+		<a href="#first" onclick="javascript: show('updiv');">
+				<div id="full-logo">
+						<div id="logo"><img src="assets/img/tonguesten-logo.png"></div>
+				</div>
 		</a>
-		
 		<div id="newsletter">
 			<div id="mc_embed_signup">
 
@@ -107,7 +111,7 @@
 
 					<form action="https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your@emailadress.com" required>
+						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your@emailaddress.com" required>
 					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 					    <div style="position: absolute; display:inline-block; left: -5000px;"><input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value=""></div>
 					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -117,9 +121,9 @@
 		</div>
 
 		<div id="nav-buttons">
-			<a href="#second"><div id="featuresBut" class="tNavButton">Features</div></a>
-			<a href="#fourth"><div id="wir" class="tNavButton">What is ReBeats?</div></a>
-			<a href="about.html"><div id="aboutBut" class="tNavButton">Our team</div></a>
+			<a href="#second" onclick="javascript: show('updiv');"><div id="featuresBut" class="tNavButton">Features</div></a>
+			<a href="#fourth" onclick="javascript: show('updiv');"><div id="wir" class="tNavButton">What is ReBeats?</div></a>
+			<a href="about.html" onclick="javascript: show('updiv');"><div id="aboutBut" class="tNavButton">Our team</div></a>
 		</div>
 
 		
@@ -135,7 +139,6 @@
 			</a>
 		</div>
 	</div>
-
 
 		<section id="first">
 		<a name="first"></a>	
