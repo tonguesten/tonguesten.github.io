@@ -463,14 +463,13 @@ ELEMENTS
 }
 
 .quote{
-	width:350px;
+	width:380px;
 	position: relative;
 	display: inline-block;
 	padding:10px;
-	padding-bottom: 70px;
 }
 .img img{
-	width: 100%;
+	width: 90%;
 	border-radius: 100px; /*half of the width of the image - less would round off corners*/
 	margin-top: 2px;
 	margin-bottom: 2px;
@@ -483,15 +482,15 @@ ELEMENTS
 	width:25%;
 	position: relative;
 	display: inline-block;
-	top:50px;
+	vertical-align: middle;
 	
 }
 
 #txt{
-	width:65%;
+	width:70%;
 	position: relative;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 /*ABOUT SECTION*/
