@@ -49,7 +49,28 @@
 			function show (id){
 				var elemento = document.getElementById(id);
 				elemento.className = "visible";
-				console.log(elemento);
+				//console.log(elemento);
+			}
+		</script>
+
+		<script language="javascript">
+			window.onload = function() {
+				scrollText('title');
+			}
+		</script>
+
+		<script type='text/JavaScript'>
+			function scrollText(identification){
+					//console.log(identification);
+					texts = ["Just by watching music videos with ReBeats, </br>Paolo, age 12, spends half an hour a day practising English.",
+							"Just by watching music videos with ReBeats, </br>Paolo, age 12, spends half an hour a day practising English.",
+							"Just by watching music videos with ReBeats, </br>Paolo, age 12, spends half an hour a day practising English.",
+							"Just by watching music videos with ReBeats, </br>Paolo, age 12, spends half an hour a day practising English."]
+					aleat = Math.random() * texts.length;
+   					aleat = Math.floor(aleat);
+
+					var txt = document.getElementById(identification);
+					txt.innerHTML = texts[aleat];
 			}
 		</script>
 
@@ -152,7 +173,6 @@
 				</div>
 
 				<div id="title" class="tSubtitle taCenter">Just by watching music videos with ReBeats, </br>Paolo, age 12, spends half an hour a day practising English.</div>
-	
 
 				<div id="cta-button" class="tNormalBold">
 					<a href="http://www.rebeats.tv" target="_blank" class="tryBut">Try it now - for free</a>
