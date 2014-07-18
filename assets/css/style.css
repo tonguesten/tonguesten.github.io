@@ -235,8 +235,8 @@ ELEMENTS
 	position: relative;
 	text-align: center;
 	display: inline-block;
-	margin-top: 20px; 
-	margin-bottom: 20px;
+	margin-top: 1%; 
+	margin-bottom: 1%;
 }
 
 #cta-button{
