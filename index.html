@@ -23,6 +23,8 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 		type="text/javascript" charset="utf-8"></script>
 
+
+
 		<script type='text/JavaScript'>
 			function showhide(identification){
 				var elemento = document.getElementById(identification);
@@ -53,18 +55,12 @@
 			}
 		</script>
 
-		<script language="javascript">
-			window.onload = function() {
-				scrollText('title');
-			}
-		</script>
-
 		<script type='text/JavaScript'>
 			function scrollText(identification){
 					//console.log(identification);
 					texts = ["Just by watching music videos with ReBeats, </br>Paolo, age 12, spends half an hour a day practising English.",
 							"ReBeats is the best teaching support for Friday afternoons, </br>when you feel the students are bored and waiting for the bell to ring",
-							"By spending twenty minutes listening to her favourite songs on ReBeats </br>every day, Agnieszka, aged 17, improved her English spelling and grammar."]
+							"Twenty minutes listening to her favourite songs on ReBeats every day, </br>Agnieszka, aged 17, improved her English spelling and grammar."]
 					aleat = Math.random() * texts.length;
    					aleat = Math.floor(aleat);
 
@@ -172,6 +168,10 @@
 				</div>
 
 				<div id="title" class="tSubtitle taCenter"></div>
+
+				<script language="javascript">
+						scrollText('title');
+				</script>
 
 				<div id="cta-button" class="tNormalBold">
 					<a href="http://www.rebeats.tv" target="_blank" class="tryBut">Try it now - for free</a>
