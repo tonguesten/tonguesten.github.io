@@ -79,30 +79,12 @@ ELEMENTS
 	top:0px;
 }
 
-#featuresBut{
-	width:70px;
-	height: 30px;
-	position: relative;
-	display: inline-block;
-	margin-right: 15px;
-	padding-top: 25px;
-}
-
-#wir{
-	width:150px;
+.sNavButton {
 	height: 30px;
 	position: relative;
 	display: inline-block;
 	padding-top: 25px;
-	
-}
-
-#aboutBut{
-	width:100px;
-	height: 30px;
-	position: relative;
-	display: inline-block;
-	padding-top: 25px;
+	padding-right: 20px;
 }
 
 .visible {display:block;}
@@ -494,6 +476,57 @@ ELEMENTS
 	vertical-align: middle;
 }
 
+/*HIRING SECTION*/
+
+#imgWwu {
+	position:absolute;
+	float: right;
+	top:0;
+	right:50px;
+	display: inline-block;
+}
+
+#jobs{
+	width: 90%;
+	position: relative;
+	text-align: center;
+	left:5%;
+	z-index: 9;
+	top:60px;
+	margin-bottom: 60px;
+}
+
+#containerJobs{
+	position: relative;
+	padding-top: 100px;
+}
+
+.job{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	min-height: 300px;
+	width: 40%;
+	padding-left: 1%;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: rgba(1,170,255,1);
+	border-width: 3px;
+	padding: 15px;
+	margin: 20px;
+}
+
+#more{
+	text-align:right;
+	font-weight:bold; 
+	opacity:0.9;
+}
+
+.application{
+	text-align: center;
+}
+
 /*ABOUT SECTION*/
 #about{
 	width: 90%;
@@ -502,6 +535,7 @@ ELEMENTS
 	left:5%;
 	z-index: 9;
 	top:60px;
+	text-align: center;
 	margin-bottom: 60px;
 }
 
@@ -509,7 +543,7 @@ ELEMENTS
 	width: 80%;
 	min-width:500px;
 	position: relative;
-	left:10%;
+	display: inline-block;
 	top: 50px;
 }
 

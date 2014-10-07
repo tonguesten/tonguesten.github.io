@@ -54,15 +54,15 @@ RESPONSIVE
 }
 
 #title{
-	-webkit-animation: appearTop 1.5s;
+	-webkit-animation: appearTop 0.5s;
 }
 
 #product{
-	-webkit-animation: appear 2s;
+	-webkit-animation: appear 0.5s;
 }
 
 #cta-button{
-	-webkit-animation: slideBottom 1.5s;
+	-webkit-animation: bounceIn 1.5s;
 }
 
 .tryBut:hover {
@@ -70,15 +70,15 @@ RESPONSIVE
 }
 
 #title{
-	animation: appearTop 1.5s;
+	animation: appearTop 0.5s;
 }
 
 #product{
-	animation: appear 2s;
+	animation: appear 0.5s;
 }
 
 #cta-button{
-	animation: slideBottom 1.5s;
+	animation: bounceIn 1.5s;
 }
 
 /*Second section*/
@@ -108,6 +108,22 @@ RESPONSIVE
 	animation: picHover 0.5s;
 }
 
+#pics{
+    -webkit-animation: zoomInUp 1s;
+    animation: zoomInUp 1s;
+}
+
+/*hiring*/
+
+#imgWwu{
+    -webkit-animation: slideDown 0.5s;
+    animation: slideDown 0.5s;
+}
+
+.job{
+    -webkit-animation: bounceInRight 1s;
+    animation: bounceInRight 1s;
+}
 
 /*
 ------------
@@ -175,6 +191,14 @@ KEYFRAMES
   
     100%{opacity: 1;
     	-webkit-transform: translateY(0%);}
+}
+
+@-webkit-keyframes slideDown {
+    0%{opacity: 0;
+        -webkit-transform: translateY(-120%);}
+  
+    100%{opacity: 1;
+        -webkit-transform: translateY(0%);}
 }
 
 @keyframes photo1Hover {
