@@ -46,14 +46,14 @@ ELEMENTS
 
 /*NAVIGATION BLUE BAR*/
 
-#blue-bar{
+#navigationBar{
 	position: fixed; 
 	z-index: 10;
 	width: 100%;
 	height: 60px;
 }
 
-#full-logo{
+#bigLogo{
 	position: relative;
 	width: 180px;
 	height:83px;
@@ -72,14 +72,14 @@ ELEMENTS
  	left:15px;
 }
 
-#nav-buttons{
+#navigationButtons{
 	position: absolute;
 	display: inline-block;
 	left: 192px;
 	top:0px;
 }
 
-.sNavButton {
+.sNavigationButton {
 	height: 30px;
 	position: relative;
 	display: inline-block;
@@ -147,7 +147,7 @@ ELEMENTS
 }
 
 
-#social{
+#socialButtons{
 	position: absolute;
 	display: inline-block;
 	width:90px;
@@ -155,45 +155,33 @@ ELEMENTS
 	top:15px;
 }
 
-#tumblr{
+.socialButton{
 	position: relative;
 	display: inline-block;
-	background: no-repeat url(../img/tumblr.png);
 	width: 25px;
 	height: 25px;
+}
+
+#tumblr{
+	background: no-repeat url(../img/tumblr.png);
 }
 
 #facebook{
-	position: relative;
-	display: inline-block;
 	background: no-repeat url(../img/facebook.png);
-	width: 25px;
-	height: 25px;
 }
 
 #twitter{
-	position: relative;
-	display: inline-block;
 	background: no-repeat url(../img/twitter.png);
-	width: 25px;
-	height: 25px;
 }
 
 /*FIRST SECTION*/
 
 #first{
+	position: relative;
 	width: 100%;
 	height: 680px;
 	z-index: 9;
-}
-
-#content{
-	width:90%;
-	height:85%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 80px;
-	padding-bottom: 30px;
+	top: 70px;
 	text-align: center;
 }
 
@@ -482,7 +470,6 @@ ELEMENTS
 	position:absolute;
 	float: right;
 	top:0;
-	right:50px;
 	display: inline-block;
 }
 

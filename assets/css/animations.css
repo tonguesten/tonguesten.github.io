@@ -6,7 +6,7 @@ RESPONSIVE
 
 /*Blue Bar*/
 
-#full-logo{
+#bigLogo{
 	-webkit-animation: slideNav 1.25s; 
 }
 
@@ -27,7 +27,7 @@ RESPONSIVE
 }
 
 
-#full-logo{
+#bigLogo{
 	animation: slideNav 1.25s; 
 }
 

@@ -207,68 +207,93 @@
 				})
 			<!-- end myFunctions -->
 		</script>
-
 	</head>
 
 	<body>
 	
-	<div id="blue-bar">
-		<a href="#first" onclick="javascript: show('updiv');">
-				<div id="full-logo">
-						<div id="logo"><img src="assets/img/tonguesten-logo.png"></div>
+		<div id="navigationBar">
+
+			<a href="#first" onclick="javascript: show('updiv');">
+				<div id="bigLogo">
+					<div id="logo">
+						<img src="assets/img/tonguesten-logo.png">
+					</div>
 				</div>
-		</a>
-		<div id="newsletter">
-			<div id="mc_embed_signup">
+			</a>
+			
+			<div id="newsletter">
+
+				<div id="mc_embed_signup">
 
 					<div class="visible" id="updiv">
+						
 						<span id="word">Subscribe to our </br>newsletter</span>
+						
 						<div id="buttons">
-						<a href="javascript:showhide ('updiv'); newsletter('teacher');">
-						<input type="submit" value="Teacher" name="teacher" class="rol">
-						</a>
-						<a href="javascript:showhide ('updiv'); newsletter('student');">
-						<input type="submit" value="Student" name="student" class="rol">
-						</a>
+							<a href="javascript:showhide ('updiv'); newsletter('teacher');">
+								<input type="submit" value="Teacher" name="teacher" class="rol">
+							</a>
+
+							<a href="javascript:showhide ('updiv'); newsletter('student');">
+								<input type="submit" value="Student" name="student" class="rol">
+							</a>
 						</div>
 					</div>
 
 					<form action="https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						
 						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your@emailaddress.com" required>
+					    
 					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    <div style="position: absolute; display:inline-block; left: -5000px;"><input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value=""></div>
-					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					    
+					    <div style="position: absolute; display:inline-block; left: -5000px;">
+					    	<input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value="">
+					    </div>
+					    
+					    <div class="clear">
+					    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+					    </div>
 
 					</form>
 				</div>
-		</div>
+			</div>
 
-		<div id="nav-buttons">
-			<a href="#second" onclick="javascript: show('updiv');"><div class="tNavButton sNavButton">Features</div></a>
-			<a href="#fourth" onclick="javascript: show('updiv');"><div class="tNavButton sNavButton">What is ReBeats?</div></a>
-			<a href="hiring.html" onclick="javascript: show('updiv');"><div class="tNavButton sNavButton">We're Hiring</div></a>
-			<a href="about.html" onclick="javascript: show('updiv');"><div class="tNavButton sNavButton">Our team</div></a>
-		</div>
+			<div id="navigationButtons">
+				<a href="#second" onclick="javascript: show('updiv');">
+					<div class="tNavigationButton sNavigationButton">Features</div>
+				</a>
 
-		
-		<div id="social">
-			<a href="http://www.wearet10.tumblr.com" target="_blank">
-				<div id="tumblr"></div>
-			</a>
-			<a href="https://www.facebook.com/weareT10" target="_blank">
-				<div id="facebook"></div>
-			</a>
-			<a href="https://twitter.com/weareT10" target="_blank">
-				<div id="twitter"></div>
-			</a>
+				<a href="#fourth" onclick="javascript: show('updiv');">
+					<div class="tNavigationButton sNavigationButton">What is ReBeats?</div>
+				</a>
+
+				<a href="hiring.html" onclick="javascript: show('updiv');">
+					<div class="tNavigationButton sNavigationButton">We're Hiring</div>
+				</a>
+
+				<a href="about.html" onclick="javascript: show('updiv');">
+					<div class="tNavigationButton sNavigationButton">Our team</div>
+				</a>
+			</div>
+
+			<div id="socialButtons">
+				<a href="http://www.wearet10.tumblr.com" target="_blank">
+					<div id="tumblr" class="socialButton"></div>
+				</a>
+				<a href="https://www.facebook.com/weareT10" target="_blank">
+					<div id="facebook" class="socialButton"></div>
+				</a>
+				<a href="https://twitter.com/weareT10" target="_blank">
+					<div id="twitter" class="socialButton"></div>
+				</a>
+			</div>
+
 		</div>
-	</div>
 
 		<section id="first">
 		<a name="first"></a>	
 
-			<div id="content">
+			<div>
 
 				<div id="rebLogo"><img src="assets/img/rebeats_pic.png"></div>
 				

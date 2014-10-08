@@ -269,6 +269,13 @@
 	opacity: 0.6;
 }
 
+#imgWwu {
+	display: none;
+}
+
+.job {
+	width: 70%;
+}
 
 /*Typography*/
 
@@ -324,7 +331,7 @@ h4 {
 @media (max-width: 550px){
 
 
-#blue-bar{
+#navigationBar{
 	background-color: white;
 	text-align: center;
 	height:110px;
@@ -332,7 +339,7 @@ h4 {
 	border-width: 1px;
 }
 
-#full-logo{
+#bigLogo{
 	position: relative;
 	display: inline-block;
 	width: 180px;
@@ -351,7 +358,7 @@ h4 {
  	left:0;
 }
 
-#nav-buttons{
+#navigationButtons{
 	display: none;
 }
 
@@ -360,7 +367,7 @@ h4 {
 	display: none;
 }
 
-#social{
+#socialButtons{
 	display:none;
 }
 

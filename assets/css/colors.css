@@ -26,12 +26,12 @@ footer img{
 /*Nav blue bar*/
 
 
-#blue-bar{
+#navigationBar{
 	background: #01AAFF;
 	border-bottom:2px solid #fff;
 }
 
-#full-logo{
+#bigLogo{
 	background: #fff;
 }
 
@@ -39,7 +39,7 @@ footer img{
 		background: rgba(1,170,255,1);
 }
 
-.tNavButton{
+.tNavigationButton{
 	color: #fff;
 	opacity: 0.9;
 }
