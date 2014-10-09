@@ -1,14 +1,10 @@
-/*
-------------
-GLOBAL
-------------
-*/
+/* GLOBAL */
+
 html,
 body {
 	height: 100%;
 	max-height: 100%;
 	overflow-y: visible; 
-	
 
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -18,6 +14,14 @@ body {
 	user-select: none;
 	
 	cursor:default;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: 680px;
+	top: 70px;
+	text-align: center;
 }
 
 p {
@@ -38,22 +42,16 @@ footer{
 	text-align: center;
 }
 
-/*
-------------
-ELEMENTS
-------------
-*/
+/* NAVIGATION BAR */
 
-/*NAVIGATION BLUE BAR*/
-
-#navigationBar{
+#navigationBar {
 	position: fixed; 
-	z-index: 10;
 	width: 100%;
 	height: 60px;
+	z-index: 10;
 }
 
-#bigLogo{
+#bigLogo {
 	position: relative;
 	width: 180px;
 	height:83px;
@@ -62,92 +60,46 @@ ELEMENTS
 	z-index: 9;
 }
 
-
-#logo{
- 	width:150px;
+#logo {
  	position:relative;
  	display: inline-block;
- 	top:2px;
+ 	width:150px;
  	margin-bottom: 5px;
+ 	top:2px;
  	left:15px;
 }
 
-#navigationButtons{
+#navigationButtons {
 	position: absolute;
 	display: inline-block;
 	left: 192px;
 	top:0px;
 }
 
-.sNavigationButton {
-	height: 30px;
-	position: relative;
-	display: inline-block;
-	padding-top: 25px;
-	padding-right: 20px;
-}
-
-.visible {display:block;}
-.invisible {display:none;}	
-
-#updiv {
-
+#typeSelector {
 	position: absolute;
-	top:0px;
-	left: 0px;
 	float: left;
 	width: 310px;
 	height: 60px;
+	top:0px;
+	left: 0px;
 	z-index:8;
-
 	border-radius: 0px 0px 10px 10px;
-	
 }
 
-#word{
+#subscriptionText {
 	position: relative;
 	display: inline-block;
-	top:  20%;
-	width: auto;
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	text-align: center;
-	font-size:15px;
-	line-height: normal;
-	
+	top: 20%;
 }
 
-.rol {
-	clear:both;  
-	border-radius:4px; 
-	cursor: pointer; 
-	display: inline-block; 
-	font-size:15px; 
-	font-weight: bold; 
-	height: auto; 
-	line-height: 32px; 
-	margin: 0 0 10px 4px; 
-	padding:0px;
-	padding-right: 10px;
-	padding-left: 10px; 
-	text-align: center; 
-	text-decoration: none; 
-	vertical-align: baseline; 
-	white-space: nowrap; 
-	width: auto;
-}
-
-
-
-#buttons{
-	width:auto;
+#subscriptionButtons {
 	position: relative;
 	display: inline-block;
-	height: auto;
 	top:7%;
 }
 
-
-#socialButtons{
+#socialButtons {
 	position: absolute;
 	display: inline-block;
 	width:90px;
@@ -155,37 +107,75 @@ ELEMENTS
 	top:15px;
 }
 
-.socialButton{
+.sNavigationButton {
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	padding-top: 25px;
+	padding-right: 20px;
+}
+
+.subscriptionType {
+	display: inline-block; 
+	padding:0px;
+	padding-right: 10px;
+	padding-left: 10px; 
+	border-radius:4px; 
+	margin: 0 0 10px 4px; 
+	cursor: pointer; 
+	clear:both;   
+}
+
+.socialButton {
 	position: relative;
 	display: inline-block;
 	width: 25px;
 	height: 25px;
 }
 
-#tumblr{
-	background: no-repeat url(../img/tumblr.png);
+.visible {
+	display:block;
 }
 
-#facebook{
-	background: no-repeat url(../img/facebook.png);
+.invisible {
+	display:none;
 }
 
-#twitter{
-	background: no-repeat url(../img/twitter.png);
-}
+/* PRINCIPAL SECTION */
 
-/*FIRST SECTION*/
-
-#first{
+#rebeatsLogo {
 	position: relative;
-	width: 100%;
-	height: 680px;
-	z-index: 9;
-	top: 70px;
-	text-align: center;
+	display: inline-block;
+	width: 240px;
+	top:15px;
+	margin-bottom: 30px;
 }
 
-#rebLogo{
+#productImage {
+	position: relative;
+	display: block;
+	width:45%;
+	left: 27.5%;
+}
+
+#scrollMotion {
+	position: relative;
+	display: inline-block;
+	width:100%;
+	margin-top: 1%; 
+	margin-bottom: 0;
+}
+
+#callToActionButton {
+	position: relative;
+	display: block;
+	width:100%;
+	height:65px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.sectionLogo {
 	width: 240px;
 	position: relative;
 	display: inline-block;
@@ -193,363 +183,192 @@ ELEMENTS
 	margin-bottom: 30px;
 }
 
-#product{
-	width:45%;
-	position: relative;
-	display: block;
-	left: 27.5%;
-}
-
-#title{
-	width:100%;
-	position: relative;
-	text-align: center;
-	display: inline-block;
-	margin-top: 1%; 
-	margin-bottom: 0;
-}
-
-#cta-button{
-	width:100%;
-	height:65px;
-	position: relative;
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	text-align:center;
-}	
-
-
-.tryBut {
-	width: 350px;
-	border-radius: 7px;
+.tryIt {
 	display:inline-block;
+	width: 350px;
 	height:65px;
+	border-radius: 7px;
 	line-height:61px;
-	text-align:center;
 }
 
-.tryBut:hover{ 
+.tryIt:hover { 
 	position:relative;
 }
 
+/* FEATURES SECTION */
 
-/*SECOND SECTION*/
-
-#second{
-	width: 100%;
-	height: 680px;
-	position: relative;
-	top:50px;
-}
-
-#features-title{
-	width:20%;
-	position: relative;
-	left:40%;
-	top:75px;
-}
-
-#features{
-	width: 90%;
-	height:60%;
+#featuresContainer {
 	position: relative;
 	float: left;
+	width: 90%;
+	height:60%;
 	left: 5%;
-	top:150px;
+	top: 75px;
 }
 
-#featBox{
+.featureContainer {
+	position: relative;
+	display: inline-block;
 	width: 33%;
 	height: 100%;
-	position: relative;
-	display: inline-block;
 	vertical-align: middle;
-	text-align: center;
 }
 
-#photo1{
+.featureImage {	
+	position: relative;
+	display: inline-block;
+	height:90%;
+	margin-bottom:10px; 
+	vertical-align: top;
+}
+
+.verticalImage {
 	width:37%;
 	min-width: 150px;
-	height:90%;
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
-	margin-bottom:10px; 
 }
 
-#photo1:hover{
+.verticalImage:hover {
 	width:39%;
 }
 
-#photo2{
+.horizontalImage {
 	width:80%;
 	min-width: 280px;
-	height:90%;
+}
+
+.horizontalImage:hover {
+	width:82%;
+}
+
+.featureTitle {
 	position: relative;
 	display: inline-block;
-	vertical-align: top;
-}
-
-#photo2:hover{
-	width:82%;
-
-}
-
-#feaText{
 	width:80%;
 	height:10%;
-	position: relative;
-	display: inline-block;
 	vertical-align: bottom;
 }
 
+/* MORE-FEATURES SECTION */
 
-/*THIRD SECTION*/
-
-#third{
-	width: 100%;
-	height: 680px;
-	position: relative;
-
-}
-
-#box{
+#moreFeaturesContainer {
+	position:relative;
 	width:90%;
 	height: 85%;
-	position:relative;
 	top:12.5%;
 	left:5%;
 }
 
-#content1{
+.moreFeatureContainer {
+	position: relative;
 	width: 90%;
 	height: 130px;
-	position: relative;
 	left:5%;
 	margin:5px;
 }
 
-#text1{
+.moreFeatureText {
+	position: relative;
+	display: inline-block;
 	width: 70%;
 	height: 100%;
-	position: relative;
-	float: left;
-	display: inline-block;
 	padding-top: 60px;
 }
 
-#pic1{
-	width:30%;
-	height: 100px;
-	position: relative;
-	float:right;
-	display: inline-block;
-}
-
-#content2{
-	width: 90%;
-	height: 130px;
-	position: relative;
-	left: 5%;
-	margin:5px;
-}
-
-#text2{
-	width: 70%;
-	height: 100%;
-	position: relative;
+.floatRight {
 	float: right;
-	display: inline-block;
-	padding-top: 60px;
 }
 
-#pic2{
+.floatLeft {
+	float: left;
+}
+
+.moreFeatureImage {
+	position: relative;
+	display: inline-block;
 	width:30%;
 	height: 100px;
+}
+
+/* REBEATS IS SECTION */
+
+#rebeatsIsTitle { 
 	position: relative;
 	display: inline-block;
-	float: left;
-}
-
-#content3{
-	width: 90%;
-	height: 130px;
-	position: relative;
-	left:5%;
-	margin:5px;
-}
-
-#text3{
-	width: 70%;
-	position: relative;
-	float: left;
-	display: inline-block;
-	padding-top: 60px;
-}
-
-#pic3{
-	width:30%;
-	height: 100px;
-	position: relative;
-	display: inline-block;
-	float: left;
-}
-
-/*FOURTH SECTION*/
-
-#fourth{
-	width: 100%;
-	height: auto;
-	position: relative;
-	text-align: center;
-	padding-bottom: 60px;
-}
-
-#fcontainer{
-	width:75%;
-	position: relative;
-	display: inline-block;
-	padding-top:100px;
+	width: 75%;
+	padding-top:75px;
 	padding-bottom: 10px;
 }
 
-#who{
-	margin-bottom:15px; 
-}
-
-#scontainer{
-	width:75%;
+.rebeatsIsTextBox {
 	position: relative;
 	display: inline-block;
-	margin-top:10px;
+	width: 75%;
+	padding-top:20px;
+	padding-bottom: 10px;
 }
 
-#quotes{
-	width:100%;
+#quotes {
 	position: relative;
+	width:100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.quote{
-	width:380px;
+.quote {
 	position: relative;
 	display: inline-block;
+	width:380px;
 	padding:10px;
 	vertical-align: middle;
 }
-.img img{
-	width: 90%;
-	border-radius: 100px; /*half of the width of the image - less would round off corners*/
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-left: 2px;
-	margin-right: 2px;
-	opacity: 0.8;
-}
 
-.img{
-	width:25%;
+#testimonialText {
 	position: relative;
 	display: inline-block;
-	vertical-align: middle;
-	
-}
-
-#txt{
 	width:70%;
-	position: relative;
-	display: inline-block;
 	vertical-align: middle;
 }
 
-/*HIRING SECTION*/
+/* HIRING SECTION */
 
-#imgWwu {
+#jobsImage {
 	position:absolute;
+	display: inline-block;
 	float: right;
 	top:0;
-	display: inline-block;
 }
 
-#jobs{
-	width: 90%;
-	position: relative;
-	text-align: center;
-	left:5%;
-	z-index: 9;
-	top:60px;
-	margin-bottom: 60px;
-}
-
-#containerJobs{
+#jobsContainer {
 	position: relative;
 	padding-top: 100px;
 }
 
-.job{
+.job {
 	position: relative;
 	display: inline-block;
-	vertical-align: top;
-	text-align: left;
-	min-height: 300px;
 	width: 40%;
+	min-height: 300px;
+	padding: 15px;
 	padding-left: 1%;
+	margin: 20px;
 	border-style: solid;
 	border-radius: 5px;
 	border-color: rgba(1,170,255,1);
 	border-width: 3px;
-	padding: 15px;
-	margin: 20px;
+	vertical-align: top;
 }
 
-#more{
-	text-align:right;
-	font-weight:bold; 
-	opacity:0.9;
-}
+/* ABOUT SECTION */
 
-.application{
-	text-align: center;
-}
-
-/*ABOUT SECTION*/
-#about{
-	width: 90%;
-	height: 600px;
+#peopleContainer {
 	position: relative;
-	left:5%;
-	z-index: 9;
-	top:60px;
-	text-align: center;
-	margin-bottom: 60px;
-}
-
-#teamTitle{
-	width: 80%;
-	min-width:500px;
-	position: relative;
-	display: inline-block;
-	top: 50px;
-}
-
-#pics{
 	width:80%;
 	height:32.5%;
-	position: relative;
-	left:10%;
 	top:100px;
+	left:10%;
 }
 
-.col {
-	width: 19.5% ;
-	position: relative;
-	display: inline-block;
-	text-decoration: none;
-}
-
-#about img{
+#aboutNav img {
 	width: 65%;
 	border-radius: 70px; /*half of the width of the image - less would round off corners*/
 	margin-top: 20px;
@@ -559,13 +378,28 @@ ELEMENTS
 	opacity: 0.6;
 }
 
-#about img:hover{
+#aboutNav img:hover {
 	opacity: 1;
 }
 
-/*FOOTER*/
+.sectionTitle {
+	position: relative;
+	display: inline-block;
+	width: 80%;
+	min-width:500px;
+	top: 50px;
+}
 
-.logos img{
+.teamCol {
+	position: relative;
+	display: inline-block;
+	width: 19.5% ;
+	text-decoration: none;
+}
+
+/* FOOTER */
+
+.logos img {
 	position: relative;
 	display: inline-block;
 	width:10%;
@@ -575,10 +409,10 @@ ELEMENTS
 	padding-top: 10px;
 }
 
-.rights{
+.rights {
 	padding-bottom:2px; 
 }
 
-.contacts{
+.contacts {
 	padding-bottom: 15px;
 }

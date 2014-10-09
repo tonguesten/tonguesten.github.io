@@ -65,11 +65,11 @@
 					}
 				}
 
-				function newsletter (rol) {
+				function newsletter (subscriptionType) {
 					//var kind = document.getElementById("mc-embedded-subscribe-form");
-					//console.log(rol);
+					//console.log(subscriptionType);
 					//console.log('kind='+kind.action);
-					if(rol == "teacher"){
+					if(subscriptionType == "teacher"){
 						$('#mc-embedded-subscribe-form').attr('action', "https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=c8e67946e6");
 						//console.log($('#mc-embedded-subscribe-form').attr('action'));
 					}else{
@@ -91,8 +91,8 @@
 						aleat = Math.random() * texts.length;
 	   					aleat = Math.floor(aleat);
 
-						var txt = document.getElementById(identification);
-						txt.innerHTML = texts[aleat];
+						var testimonialText = document.getElementById(identification);
+						testimonialText.innerHTML = texts[aleat];
 				}
 				
 				function scrollQuote () {
@@ -192,7 +192,7 @@
 				}
 
 				function getQuoteDiv (element) {
-					return '<div class="txt">'
+					return '<div class="testimonialText">'
 					+	'<span class="tQuote">' + element.quote + '</br></br></span>'
 					+	'<span class="tSign">' + element.name + ', ' + element.info + '</span>'
 					+ '</div>';
@@ -210,76 +210,103 @@
 	</head>
 
 	<body>
-		
-	<div id="navigationBar">
-	
-		<a href="index.html">
-			<div id="bigLogo">
-					<div id="logo"><img src="assets/img/tonguesten-logo.png" width="140px"></div>
-			</div>
-		</a>
 
-		<div id="navigationButtons">
-			<a href="index.html#second"><div class="tNavigationButton sNavigationButton">Features</div></a>
-			<a href="index.html#fourth"><div class="tNavigationButton sNavigationButton">What is ReBeats?</div></a>
-			<a href="hiring.html"><div class="tNavigationButton sNavigationButton">We're hiring</div></a>
-			<a href="about.html"><div class="tNavigationButton sNavigationButton">Our team</div></a>
-		</div>
+		<div id="navigationBar">
 
-		<div id="newsletter">
-			<div id="mc_embed_signup">
-
-					<div class="visible" id="updiv">
-						<span id="word">Subscribe to our </br>newsletter</span>
-						<div id="buttons">
-						<a href="javascript:showhide ('updiv'); newsletter('teacher');">
-						<input type="submit" value="Teacher" name="teacher" class="rol">
-						</a>
-						<a href="javascript:showhide ('updiv'); newsletter('student');">
-						<input type="submit" value="Student" name="student" class="rol">
-						</a>
+				<a href="#principalNav" onclick="javascript: show('typeSelector');">
+					<div id="bigLogo">
+						<div id="logo">
+							<img src="assets/img/tonguesten-logo.png">
 						</div>
 					</div>
+				</a>
+				
+				<div id="newsletter">
 
-					<form action="https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your@emailaddress.com" required>
-					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    <div style="position: absolute; display:inline-block; left: -5000px;"><input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value=""></div>
-					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					<div id="mc_embed_signup">
 
-					</form>
+						<div class="visible" id="typeSelector">
+							
+							<span id="subscriptionText" class="mediumFont centerAlign">Subscribe to our </br>newsletter</span>
+							
+							<div id="subscriptionButtons">
+								<a href="javascript:showhide ('typeSelector'); newsletter('teacher');">
+									<input type="submit" value="Teacher" name="teacher" class="subscriptionType mediumFont boldStyle centerAlign">
+								</a>
+
+								<a href="javascript:showhide ('typeSelector'); newsletter('student');">
+									<input type="submit" value="Student" name="student" class="subscriptionType mediumFont boldStyle centerAlign">
+								</a>
+							</div>
+						</div>
+
+						<form action="https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your@emailaddress.com" required>
+						    
+						    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    
+						    <div style="position: absolute; display:inline-block; left: -5000px;">
+						    	<input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value="">
+						    </div>
+						    
+						    <div class="clear">
+						    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+						    </div>
+
+						</form>
+					</div>
+				</div>
+
+				<div id="navigationButtons">
+					<a href="index.html#featuresNav" onclick="javascript: show('typeSelector');">
+						<div class="tNavigationButton sNavigationButton">Features</div>
+					</a>
+
+					<a href="index.html#rebeatsIsNav" onclick="javascript: show('typeSelector');">
+						<div class="tNavigationButton sNavigationButton">What is ReBeats?</div>
+					</a>
+
+					<a href="hiring.html" onclick="javascript: show('typeSelector');">
+						<div class="tNavigationButton sNavigationButton">We're Hiring</div>
+					</a>
+
+					<a href="about.html" onclick="javascript: show('typeSelector');">
+						<div class="tNavigationButton sNavigationButton">Our team</div>
+					</a>
+				</div>
+
+				<div id="socialButtons">
+					<a href="http://www.wearet10.tumblr.com" target="_blank">
+						<div id="tumblr" class="socialButton"></div>
+					</a>
+					<a href="https://www.facebook.com/weareT10" target="_blank">
+						<div id="facebook" class="socialButton"></div>
+					</a>
+					<a href="https://twitter.com/weareT10" target="_blank">
+						<div id="twitter" class="socialButton"></div>
+					</a>
 				</div>
 		</div>
 
-		<div id="socialButtons">
-			<a href="http://www.wearet10.tumblr.com" target="_blank">
-				<div id="tumblr" class="socialButton"></div>
-			</a>
-			<a href="https://www.facebook.com/weareT10" target="_blank">
-				<div id="facebook" class="socialButton"></div>
-			</a>
-			<a href="https://twitter.com/weareT10" target="_blank">
-				<div id="twitter" class="socialButton"></div>
-			</a>
-		</div>
-	</div>
+		<section id="jobsNav">
 
-
-		<section id="jobs">
-
-			<div id="teamTitle" class="tTeam team taCenter">
-				Do you fit one of this profiles? We want you!
+			<div class="sectionTitle extrabigFont centerAlign">
+				Please, join us. We want you!
 			</div>
-			<div id="imgWwu"><img src="assets/img/work-with-us.png"></div>
 
-			<div id="containerJobs">
-				<div class="job tMedium">
+			<div id="jobsImage">
+				<img src="assets/img/work-with-us.png"/>
+			</div>
+
+			<div id="jobsContainer">
+
+				<div id="jobHOP" class="job mediumFont">
 					<div class="summary">
 						<h3>Head of Product,  English Language (Literacy & ELT)</h3>
 						<h4>Full time / Part Time, London, Start: November 2014</h4>
 						<p>We’re very excited to be looking for project/product manager and expert in ELT content and pedagogy - someone who we believe will be a game-changer for our ambitious, young startup. It means we are officially growing up, and you’ll be the one to lead our charge to market.</p>
-						<p class="tSmall" id="more">(Read more)</p>
+						<p class="smallFont boldStyle rightAlign" id="more">(Read more)</p>
 					</div>
 					<div class="details">
 						<h5>Skills we’re looking for:</h5>
@@ -301,8 +328,8 @@
 						<h5>About Tonguesten</h5>
 						<p>Tonguesten is an early-stage social enterprise that has big ambitions to change the world of language-learning and literacy. We take the world’s best music videos, films and football, and turn them into learning materials. We believe that the learning materials of the future will be different for each user, and will update in real-time. Whether a student likes Arsenal or Lady Gaga, we don’t care - it’s all packed with useful language that can be teased out, using artificial intelligence, to become part of a personalised course.</p>
 
-						<p>Our first product ReBeats has been in private beta for three months: it’s Guitar Hero for Learning English.</br>
-						We’re pretty proud that our users (teachers and students) from 88 countries are playing, on average, for twenty minutes a day.</p>
+						<p>Our first product ReBeats has been in private beta for three months: it’s Guitar Hero for Learning English.</p>
+						<p>We’re pretty proud that our users (teachers and students) from 88 countries are playing, on average, for twenty minutes a day.</p>
 
 						<p>We’re backed by Telefonica, based at the WAYRA accelerator in Central London, and we’ve just won a prestigious grant to develop a primary school product for the 1 million + kids in the UK who don’t have English at home.</p>
 
@@ -328,22 +355,21 @@
 						</ul>
 						<p>Oh, and if you can come up with a better meme that the baby seals one on our Facebook page we will hire you on the spot!
 						</p>
-
 					</div>
-					<div class="application">
+					<div class="apply centerAlign">
 						<hr>
-						<p>We can’t tell you how excited we are to hear from you. Please apply by sending a CV, cover letter and salary expectations to <a href="mailto:andrea@tonguesten.com?subject=JOB APPLICATION - Head of Product,  English Language">andrea@tonguesten.com</a> <u>by 5pm UK time on 20th October</u>.</p> 
-						<p>All applications receive a response and will be kept strictly confidential.</p>
-						
+						<p>We can’t tell you how excited we are to hear from you. Please apply by sending a CV, cover letter and salary expectations to <a href="mailto:andrea@tonguesten.com?subject=JOB apply - Head of Product,  English Language">andrea@tonguesten.com</a> <u>by 5pm UK time on 20th October</u>.</p> 
+						<p>All applications receive a response and will be kept strictly confidential.</p>	
 					</div>
 				</div>
 
-				<div class="job tMedium">
+				<div id="jobROR" class="job tMedium">
 					<div class="summary">
 						<h3>Full-Stack Ruby on Rails Engineer</h3>
 						<h4>London, Start: November 2014</h4>
-						<p>We are looking for a creative, curious, flexible Full-Stack Ruby on Rails Engineer to join our small, collaborative and growing tech team of three: </br>1 x  NLP full-time, 1 x RoR Senior part-time, 1 x Javascript Junior part-time.</p>
-						<p class="tSmall" id="more">(Read more)</p>
+						<p>We are looking for a creative, curious, flexible Full-Stack Ruby on Rails Engineer to join our small, collaborative and growing tech team of three:</p> 
+						<p>1 x  NLP full-time, 1 x RoR Senior part-time, 1 x Javascript Junior part-time.</p>
+						<p class="smallFont boldStyle rightAlign" id="more">(Read more)</p>
 					</div>
 					<div class="details">
 						</br>
@@ -360,7 +386,7 @@
 						<ul>
 							<li>5+ years of professional software engineering experience, with at least 1-3 years where you worked in Ruby on Rails.</li>
 							<li>Up to date knowledge of / experience in modern Javascript frameworks</li>
-							<li>Experience scaling a web application with Ruby, MySQL and Nginx. </li>
+							<li>Experience scaling a web apply with Ruby, MySQL and Nginx. </li>
 							<li>Working on or contributing to open-source / open-data projects</li>
 							<li>Interest in natural language processing, machine learning or artificial intelligence</li>
 							<li>Interest in our social mission: we're driven because we are passionate about changing education for the better. </li>
@@ -407,28 +433,29 @@
 							<li>helping to come up with a solution that could change the game for the 1 in 5 people in the UK and EU who cannot read</li>
 						</ul>
 					</div>
-					<div class="application">
+					<div class="apply centerAlign">
 						<hr>
-						<p>We can’t tell you how excited we are to hear from you. Please apply by sending an email with links (Github etc) to <a href="mailto:andrea@tonguesten.com?subject=JOB APPLICATION - Full-Stack Ruby on Rails Engineer">andrea@tonguesten.com</a>.</p> 
+						<p>We can’t tell you how excited we are to hear from you. Please apply by sending an email with links (Github etc) to <a href="mailto:andrea@tonguesten.com?subject=JOB apply - Full-Stack Ruby on Rails Engineer">andrea@tonguesten.com</a>.</p> 
 						<p>All applications receive a response and will be kept strictly confidential.</p>
 					</div>
 				</div>
-
-				</div>
-
 			</div>
 
-			
+			</div>
 		</section>
 
-	<footer>
+		<footer>
 			<div class="logos">
 				<img src="assets/img/tonguesten-logo-footer.png">
-				<a href="http://wayra.org/unltd/" target="_blank"><img src="assets/img/wayra-logo.png"></a>
+				<a href="http://wayra.org/unltd/" target="_blank">
+					<img src="assets/img/wayra-logo.png">
+				</a>
 			</div>
-			<div class="rights tSmall">Copyright © 2014 Tonguesten Limited, All rights reserved. Proud member of the Wayra family. WAYRA UNLTD, 2-10 Capper St, London WC1E 6JA</div>
-			<div class="contacts tSmall">Get in touch: <a href="https://www.facebook.com/weareT10" class="white bold" target="_blank">facebook</a>, <a href="https://twitter.com/weareT10" class="white bold" target="_blank">twitter</a>, <a href="mailto:mariaz@tonguesten.com" class="white bold">email</a></div>		
-	</footer>
+			<div class="rights tSmall">Copyright © 2014 Tonguesten Limited, All rights reserved. Proud member of the Wayra family. WAYRA UNLTD, 2-10 Capper St, London WC1E 6JA
+			</div>
+			<div class="contacts tSmall">Get in touch: <a href="https://www.facebook.com/weareT10" class="white bold" target="_blank">facebook</a>, <a href="https://twitter.com/weareT10" class="white bold" target="_blank">twitter</a>, <a href="mailto:mariaz@tonguesten.com" class="white bold">email</a>
+			</div>		
+		</footer>
 
 	</body>
 </html>

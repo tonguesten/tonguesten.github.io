@@ -65,11 +65,11 @@
 					}
 				}
 
-				function newsletter (rol) {
+				function newsletter (subscriptionType) {
 					//var kind = document.getElementById("mc-embedded-subscribe-form");
-					//console.log(rol);
+					//console.log(subscriptionType);
 					//console.log('kind='+kind.action);
-					if(rol == "teacher"){
+					if(subscriptionType == "teacher"){
 						$('#mc-embedded-subscribe-form').attr('action', "https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=c8e67946e6");
 						//console.log($('#mc-embedded-subscribe-form').attr('action'));
 					}else{
@@ -91,8 +91,8 @@
 						aleat = Math.random() * texts.length;
 	   					aleat = Math.floor(aleat);
 
-						var txt = document.getElementById(identification);
-						txt.innerHTML = texts[aleat];
+						var testimonialText = document.getElementById(identification);
+						testimonialText.innerHTML = texts[aleat];
 				}
 				
 				function scrollQuote () {
@@ -192,7 +192,7 @@
 				}
 
 				function getQuoteDiv (element) {
-					return '<div class="txt">'
+					return '<div class="testimonialText">'
 					+	'<span class="tQuote">' + element.quote + '</br></br></span>'
 					+	'<span class="tSign">' + element.name + ', ' + element.info + '</span>'
 					+ '</div>';
@@ -211,103 +211,124 @@
 	
 	<body>
 		
-	<div id="navigationBar">
-	
-		<a href="index.html">
-			<div id="bigLogo">
-					<div id="logo"><img src="assets/img/tonguesten-logo.png" width="140px"></div>
-			</div>
-		</a>
+		<div id="navigationBar">
+			<a href="#principalNav" onclick="javascript: show('typeSelector');">
+				<div id="bigLogo">
+					<div id="logo">
+						<img src="assets/img/tonguesten-logo.png">
+					</div>
+				</div>
+			</a>
+			
+			<div id="newsletter">
 
-		<div id="navigationButtons">
-			<a href="index.html#second"><div class="tNavigationButton sNavigationButton">Features</div></a>
-			<a href="index.html#fourth"><div class="tNavigationButton sNavigationButton">What is ReBeats?</div></a>
-			<a href="hiring.html"><div class="tNavigationButton sNavigationButton">We're hiring</div></a>
-			<a href="about.html"><div class="tNavigationButton sNavigationButton">Our team</div></a>
-		</div>
+				<div id="mc_embed_signup">
 
-		<div id="newsletter">
-			<div id="mc_embed_signup">
+					<div class="visible" id="typeSelector">
+						
+						<span id="subscriptionText" class="mediumFont centerAlign">Subscribe to our </br>newsletter</span>
+						
+						<div id="subscriptionButtons">
+							<a href="javascript:showhide ('typeSelector'); newsletter('teacher');">
+								<input type="submit" value="Teacher" name="teacher" class="subscriptionType mediumFont boldStyle centerAlign">
+							</a>
 
-					<div class="visible" id="updiv">
-						<span id="word">Subscribe to our </br>newsletter</span>
-						<div id="buttons">
-						<a href="javascript:showhide ('updiv'); newsletter('teacher');">
-						<input type="submit" value="Teacher" name="teacher" class="rol">
-						</a>
-						<a href="javascript:showhide ('updiv'); newsletter('student');">
-						<input type="submit" value="Student" name="student" class="rol">
-						</a>
+							<a href="javascript:showhide ('typeSelector'); newsletter('student');">
+								<input type="submit" value="Student" name="student" class="subscriptionType mediumFont boldStyle centerAlign">
+							</a>
 						</div>
 					</div>
 
 					<form action="https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						
 						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your@emailaddress.com" required>
+					    
 					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    <div style="position: absolute; display:inline-block; left: -5000px;"><input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value=""></div>
-					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					    
+					    <div style="position: absolute; display:inline-block; left: -5000px;">
+					    	<input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value="">
+					    </div>
+					    
+					    <div class="clear">
+					    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+					    </div>
 
 					</form>
 				</div>
+			</div>
+
+			<div id="navigationButtons">
+				<a href="index.html#featuresNav" onclick="javascript: show('typeSelector');">
+					<div class="tNavigationButton sNavigationButton">Features</div>
+				</a>
+
+				<a href="index.html#rebeatsIsNav" onclick="javascript: show('typeSelector');">
+					<div class="tNavigationButton sNavigationButton">What is ReBeats?</div>
+				</a>
+
+				<a href="hiring.html" onclick="javascript: show('typeSelector');">
+					<div class="tNavigationButton sNavigationButton">We're Hiring</div>
+				</a>
+
+				<a href="about.html" onclick="javascript: show('typeSelector');">
+					<div class="tNavigationButton sNavigationButton">Our team</div>
+				</a>
+			</div>
+
+			<div id="socialButtons">
+				<a href="http://www.wearet10.tumblr.com" target="_blank">
+					<div id="tumblr" class="socialButton"></div>
+				</a>
+				<a href="https://www.facebook.com/weareT10" target="_blank">
+					<div id="facebook" class="socialButton"></div>
+				</a>
+				<a href="https://twitter.com/weareT10" target="_blank">
+					<div id="twitter" class="socialButton"></div>
+				</a>
+			</div>
 		</div>
 
-		<div id="socialButtons">
-			<a href="http://www.wearet10.tumblr.com" target="_blank">
-				<div id="tumblr" class="socialButton"></div>
-			</a>
-			<a href="https://www.facebook.com/weareT10" target="_blank">
-				<div id="facebook" class="socialButton"></div>
-			</a>
-			<a href="https://twitter.com/weareT10" target="_blank">
-				<div id="twitter" class="socialButton"></div>
-			</a>
-		</div>
-	</div>
+		<section id="aboutNav">
 
-
-		<section id="about">
-
-			<div id="teamTitle" class="tTeam team taCenter">
+			<div class="sectionTitle extrabigFont centerAlign">
 				MEET OUR TEAM
 			</div>
 
-			<div id="pics" class="content">
-
-					<div class="col">
-						<div class="details taCenter">
+			<div id="peopleContainer">
+					<div class="teamCol">
+						<div class="details centerAlign">
 							<h3>Dr. Anna Walton</h3>
 							<h4>Educational Psychologist</h4>
 						</div>
 						<img src="assets/img/team/anna_crop.png" alt="Anna">
 					</div>
 
-					<div class="col">		
-						<div class="details taCenter">
+					<div class="teamCol">		
+						<div class="details centerAlign">
 							<h3>Maria Zizolfi</h3>
 							<h4>Community <a href="http://www.twitter.com/callassina" target="_blank">@callassina</a></h4>
 						</div>
 						<img src="assets/img/team/maria_z.jpg" alt="Maria">
 					</div>
 
-					<div class="col">
-						<div class="details taCenter">
+					<div class="teamCol">
+						<div class="details centerAlign">
 							<h3>Jonathan Walton</h3>
 							<h4>CEO <a href="http://www.twitter.com/lemez1" target="_blank">@lemez1</a></h4>
 						</div>
 						<img src="assets/img/team/jon_music.jpg" alt="Jon">
 					</div>
 
-					<div class="col">
-						<div class="details taCenter">
+					<div class="teamCol">
+						<div class="details centerAlign">
 							<h3>Ronald Zeleznjak</h3>
 							<h4>CTO</h4>
 						</div>
 						<img src="assets/img/team/roni.jpg" alt="Roni">
 					</div>
 
-					<div class="col">
-						<div class="details taCenter">
+					<div class="teamCol">
+						<div class="details centerAlign">
 							<h3>Sheen Yap</h3>
 							<h4>UX Design <a href="http://www.twitter.com/sheen" target="_blank">@sheen</a></h4>
 						</div>
@@ -315,58 +336,62 @@
 					</div>	
 				</div>
 
-				<div id="pics" class="content" >
-					<div class="col">
+				<div id="peopleContainer" class="content" >
+					<div class="teamCol">
 						<img src="assets/img/team/colin.png" alt="Colin">
-						<div class="details taCenter">
+						<div class="details centerAlign">
 							<h3>Colin Paton</h3>
 							<h4>ELT Expert</h4>
 						</div>
 					</div>
 
-					<div class="col ">
+					<div class="teamCol ">
 						<img src="assets/img/team/maria_l_sq.jpeg" alt="Maria L">
-						<div class="details taCenter">
+						<div class="details centerAlign">
 							<h3>Maria Lehl</h3>
 							<h4>Computational Linguist</h4>
 						</div>
 					</div>
 
-					<div class="col ">
+					<div class="teamCol ">
 						<img src="assets/img/team/cosimo_crop.jpeg" alt="Cosimo">
-						<div class="details taCenter">
+						<div class="details centerAlign">
 							<h3>Cosimo Ranieri</h3>
 							<h4>Developer</h4>
 						</div>
 					</div>
 
-					<div class="col ">
+					<div class="teamCol ">
 						<img src="assets/img/team/bill2_closeup_sq.jpeg" alt="Bill">
-						<div class="details taCenter">
+						<div class="details centerAlign">
 							<h3>Bill McAlister</h3>
 							<h4>Senior Advisor</h4>
 						</div>
 					</div>
 
-					<div class="col ">
+					<div class="teamCol ">
 						<img src="assets/img/team/arnab.png" alt="Arnab">
-						<div class="details taCenter">
+						<div class="details centerAlign">
 							<h3>Dr. Arnab Chatterjee</h3>
 							<h4>Advisor</h4>
 						</div>
 					</div>
 				</div>
 
-	</section>
+		</section>
 
-	<footer>
-			<div class="logos">
-				<img src="assets/img/tonguesten-logo-footer.png">
-				<a href="http://wayra.org/unltd/" target="_blank"><img src="assets/img/wayra-logo.png"></a>
-			</div>
-			<div class="rights tSmall">Copyright © 2014 Tonguesten Limited, All rights reserved. Proud member of the Wayra family. WAYRA UNLTD, 2-10 Capper St, London WC1E 6JA</div>
-			<div class="contacts tSmall">Get in touch: <a href="https://www.facebook.com/weareT10" class="white bold" target="_blank">facebook</a>, <a href="https://twitter.com/weareT10" class="white bold" target="_blank">twitter</a>, <a href="mailto:mariaz@tonguesten.com" class="white bold">email</a></div>		
-	</footer>
+		<footer>
+				<div class="logos">
+					<img src="assets/img/tonguesten-logo-footer.png">
+					<a href="http://wayra.org/unltd/" target="_blank">
+						<img src="assets/img/wayra-logo.png">
+					</a>
+				</div>
+				<div class="rights tSmall">Copyright © 2014 Tonguesten Limited, All rights reserved. Proud member of the Wayra family. WAYRA UNLTD, 2-10 Capper St, London WC1E 6JA
+				</div>
+				<div class="contacts tSmall">Get in touch: <a href="https://www.facebook.com/weareT10" class="white bold" target="_blank">facebook</a>, <a href="https://twitter.com/weareT10" class="white bold" target="_blank">twitter</a>, <a href="mailto:mariaz@tonguesten.com" class="white bold">email</a>
+				</div>		
+		</footer>
 
 	</body>
 </html>

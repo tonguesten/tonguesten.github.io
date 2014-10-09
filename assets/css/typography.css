@@ -4,113 +4,67 @@ TYPOGRAPHY
 ------------
 */
 
-.tSubtitle {
+body{
 	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size: 30px;
-}
-
-.tNavigationButton{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size:17px;
-}
-
-.tNormalBold{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size:18px;
 	line-height: normal;
 }
 
 h3 {
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size:18px;
 	text-align: center;
-	line-height: normal;
 }
 
 h4 {
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
 	font-size:17px;
 	text-align: center;
-	line-height: normal;
 }
 
 h5 {
 	font-weight: bold;
 }
 
-.tNormalBoldBig{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
+.smallFont {
+	font-size: 13px;
+}
+
+.mediumFont {
+	font-size: 16px;
+}
+
+.normalFont {
+	font-size: 18px;
+}
+
+.semibigFont {
+	font-size: 20px;
+}
+
+.bigFont {
+	font-size: 30px;
+}
+
+.extrabigFont {
+	font-size: 35px; 
+}
+
+.boldStyle {
 	font-weight: bold;
-	font-size:30px;
-	line-height: normal;
 }
 
-.tNormal{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size:20px;
-	line-height: normal;
-}
-
-.tMedium{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size:16px;
-	line-height: normal;
-}
-
-.tSmall{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size:13px;
-	line-height: normal;
-}
-
-.bold{
-	font-weight: bold;
-}
-
-.tQuote{
-	font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
+.italicStyle {
 	font-style: italic;
-	font-size:18px;
 }
 
-.tSign{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size:16px;
-}
-
-.tText{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size:18px;
-}
-
-.tFeatures{
-	font-family: "proxima_nova_regular", Helvetica, Arial, sans-serif;
-	font-size:22px;
-	line-height: normal;
-}
-
-.tryBut {
-	font-family:"proxima_nova_regular", Helvetica, Arial, sans-serif;
-	font-weight:bold;
-	font-size:28px;
-}
-
-.tTeam{
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size:35px;
-}
-
-.taCenter{
+.centerAlign {
 	text-align: center;
 }
 
-.taleft{
-	text-align: left;	
+.rightAlign {
+	text-align: right;
 }
 
-.taRight{
-	text-align: right;	
+.subscriptionType {
+	line-height: 32px; 
+	white-space: nowrap;
 }

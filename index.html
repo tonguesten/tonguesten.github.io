@@ -65,11 +65,11 @@
 					}
 				}
 
-				function newsletter (rol) {
+				function newsletter (subscriptionType) {
 					//var kind = document.getElementById("mc-embedded-subscribe-form");
-					//console.log(rol);
+					//console.log(subscriptionType);
 					//console.log('kind='+kind.action);
-					if(rol == "teacher"){
+					if(subscriptionType == "teacher"){
 						$('#mc-embedded-subscribe-form').attr('action', "https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=c8e67946e6");
 						//console.log($('#mc-embedded-subscribe-form').attr('action'));
 					}else{
@@ -91,8 +91,8 @@
 						aleat = Math.random() * texts.length;
 	   					aleat = Math.floor(aleat);
 
-						var txt = document.getElementById(identification);
-						txt.innerHTML = texts[aleat];
+						var testimonialText = document.getElementById(identification);
+						testimonialText.innerHTML = texts[aleat];
 				}
 				
 				function scrollQuote () {
@@ -192,7 +192,7 @@
 				}
 
 				function getQuoteDiv (element) {
-					return '<div class="txt">'
+					return '<div class="testimonialText">'
 					+	'<span class="tQuote">' + element.quote + '</br></br></span>'
 					+	'<span class="tSign">' + element.name + ', ' + element.info + '</span>'
 					+ '</div>';
@@ -213,7 +213,7 @@
 	
 		<div id="navigationBar">
 
-			<a href="#first" onclick="javascript: show('updiv');">
+			<a href="#principalNav" onclick="javascript: show('typeSelector');">
 				<div id="bigLogo">
 					<div id="logo">
 						<img src="assets/img/tonguesten-logo.png">
@@ -225,17 +225,17 @@
 
 				<div id="mc_embed_signup">
 
-					<div class="visible" id="updiv">
+					<div class="visible" id="typeSelector">
 						
-						<span id="word">Subscribe to our </br>newsletter</span>
+						<span id="subscriptionText" class="mediumFont centerAlign">Subscribe to our </br>newsletter</span>
 						
-						<div id="buttons">
-							<a href="javascript:showhide ('updiv'); newsletter('teacher');">
-								<input type="submit" value="Teacher" name="teacher" class="rol">
+						<div id="subscriptionButtons">
+							<a href="javascript:showhide ('typeSelector'); newsletter('teacher');">
+								<input type="submit" value="Teacher" name="teacher" class="subscriptionType mediumFont boldStyle centerAlign">
 							</a>
 
-							<a href="javascript:showhide ('updiv'); newsletter('student');">
-								<input type="submit" value="Student" name="student" class="rol">
+							<a href="javascript:showhide ('typeSelector'); newsletter('student');">
+								<input type="submit" value="Student" name="student" class="subscriptionType mediumFont boldStyle centerAlign">
 							</a>
 						</div>
 					</div>
@@ -259,19 +259,19 @@
 			</div>
 
 			<div id="navigationButtons">
-				<a href="#second" onclick="javascript: show('updiv');">
+				<a href="#featuresNav" onclick="javascript: show('typeSelector');">
 					<div class="tNavigationButton sNavigationButton">Features</div>
 				</a>
 
-				<a href="#fourth" onclick="javascript: show('updiv');">
+				<a href="#rebeatsIsNav" onclick="javascript: show('typeSelector');">
 					<div class="tNavigationButton sNavigationButton">What is ReBeats?</div>
 				</a>
 
-				<a href="hiring.html" onclick="javascript: show('updiv');">
+				<a href="hiring.html" onclick="javascript: show('typeSelector');">
 					<div class="tNavigationButton sNavigationButton">We're Hiring</div>
 				</a>
 
-				<a href="about.html" onclick="javascript: show('updiv');">
+				<a href="about.html" onclick="javascript: show('typeSelector');">
 					<div class="tNavigationButton sNavigationButton">Our team</div>
 				</a>
 			</div>
@@ -287,109 +287,130 @@
 					<div id="twitter" class="socialButton"></div>
 				</a>
 			</div>
-
 		</div>
 
-		<section id="first">
-		<a name="first"></a>	
+		<section id="principalNav">
+		<a name="principalNav"></a>	
 
-			<div>
-
-				<div id="rebLogo"><img src="assets/img/rebeats_pic.png"></div>
+				<div id="rebeatsLogo">
+					<img src="assets/img/rebeats_pic.png">
+				</div>
 				
-				<div id="product">
-						<a href="http://www.rebeats.tv"><img src="assets/img/foto2.png" width="400px"></a>
+				<div id="productImage">
+						<a href="http://www.rebeats.tv">
+							<img src="assets/img/foto2.png" width="400px">
+						</a>
 				</div>
 
-				<div id="title" class="tSubtitle taCenter"></div>
-
-				<script language="javascript">
-						scrollText('title');
-				</script>
-
-				<div id="cta-button" class="tNormalBold">
-					<a href="http://www.rebeats.tv" target="_blank" class="tryBut">Try it now - for free</a>
+				<div id="scrollMotion" class="bigFont centerAlign">
+					<!-- The scrollText function will write here the different titles -->
 				</div>
+				
+				<div id="callToActionButton" class="semibigFont boldStyle centerAlign">
+					<a href="http://www.rebeats.tv" class="tryIt bigFont boldStyle centerAlign">Try it now - for free</a>
+				</div>
+	
+				<!-- JS functions called by the section one -->
+					<script language="javascript">
+						scrollText('scrollMotion');
+					</script>
+		</section>
+
+
+		<section id="featuresNav">
+		<a name="featuresNav"></a>
+		
+			<div id="featuresLogo" class="sectionLogo">
+				<img src="assets/img/features.png">
+			</div>
+
+			<div id="featuresContainer" class="semibigFont centerAlign">
+
+				<div class="featureContainer">
+					<a href="#moreFeaturesNav">
+						<div class="featureImage verticalImage">
+							<img src="assets/img/phone.png">
+						</div>
+					</a>
+					<div class="featureTitle">Mobile, gamified, personalised learning.</div>
+				</div>
+
+				<div class="featureContainer">
+					<a href="#moreFeaturesNav">
+						<div class="featureImage horizontalImage">
+							<img src="assets/img/feat2.png">
+						</div>
+					</a>
+					<div class="featureTitle">Automated real time exercise creation.</div>
+				</div>
+
+				<div class="featureContainer">
+					<a href="#moreFeaturesNav">
+						<div class="featureImage verticalImage">
+							<img src="assets/img/feat3.png">
+						</div>
+					</a>
+					<div class="featureTitle">Adaptive engine that learns what you need.</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section id="moreFeaturesNav">
+		<a name="moreFeaturesNav"></a>
+
+			<div id="moreFeaturesContainer" class="normalFont">
+				<div class="moreFeatureContainer">
+					<div class="moreFeatureText floatRight">ReBeats isn’t supposed to look like a lesson and it’s not meant to replace them - it’s meant to give you a great and fun way to practise reading and listening, while being exposed to real world English.</div>
+					<div class="moreFeatureImage floatLeft">
+						<img src="assets/img/foto1.png">
+					</div>
+				</div>
+
+				<div class="moreFeatureContainer">
+					<div class="moreFeatureText floatLeft">You’ll learn to recognise how words are spelt, how they fit correctly into a sentence and what they mean in context.</div>
+					<div class="moreFeatureImage floatRight">
+						<img src="assets/img/foto2.png">
+					</div>
+				</div>
+				
+				<div class="moreFeatureContainer">
+					<div class="moreFeatureText floatRight">Music and having fun both help your brain to remember things much more easily and the best bit is, you won’t even know you’re learning!</div>
+					<div class="moreFeatureImage floatLeft">
+						<img src="assets/img/foto3.png">
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		
+		<section id="rebeatsIsNav">
+		<a name="rebeatsIsNav"></a>
+
+			<div id="rebeatsIsTitle" class="bigFont boldStyle">What is ReBeats?</div>
 			
-			</div>
-
-		</section>
-
-		<section id="second">
-		<a name="second"></a>
-		
-
-			<div id="features-title"><img src="assets/img/features.png"></div>
-			<div id="features">
-				<div id="featBox">
-					<a href="#third"><div id="photo1"><img src="assets/img/phone.png"></div></a>
-					<div id="feaText" class="tFeatures taCenter">Mobile, gamified, personalised learning.</div>
-				</div>
-				<div id="featBox">
-					<a href="#third"><div id="photo2"><img src="assets/img/feat2.png"></div></a>
-					<div id="feaText" class="tFeatures taCenter">Automated real time exercise creation.</div>
-				</div>
-				<div id="featBox">
-					<a href="#third"><div id="photo1"><img src="assets/img/feat3.png"></div></a>
-					<div id="feaText" class="tFeatures taCenter">Adaptive engine that learns what you need.</div>
-				</div>
-			</div>
-		</section>
-
-
-		<section id="third">
-		<a name="third"></a>
-
-			<div id="box">
-				<div id="content1">
-					<div id="text1" class="tText ">ReBeats isn’t supposed to look like a lesson and it’s not meant to replace them - it’s meant to give you a great and fun way to practise reading and listening, while being exposed to real world English.</div>
-					<div id="pic1"><img src="assets/img/foto1.png"></div>
-				</div>
-
-				<div id="content2">
-					<div id="text2" class="tText taLeft">You’ll learn to recognise how words are spelt, how they fit correctly into a sentence and what they mean in context.</div>
-					<div id="pic2"><img src="assets/img/foto2.png"></div>
-				</div>
-				
-				<div id="content3">
-					<div id="text3" class="tText ">Music and having fun both help your brain to remember things much more easily and the best bit is, you won’t even know you’re learning!</div>
-					<div id="pic3"><img src="assets/img/foto3.png"></div>
-				</div>
-			</div>
-		
-		</section>
-
-		
-		<section id="fourth">
-		<a name="fourth"></a>
-
-			<div id="fcontainer">
-				<div id="who" class="tNormalBoldBig">What is ReBeats?</div>
-				<div  class="tNormal">We know that learning English can be hard and boring, so we challenged ourselves to create something so fun and easy that all the learning happens without even realising. That’s how ReBeats was born; a game that improves your English by watching your favourite music videos on YouTube - a Spotify for language learning.</div>
-			</div>
-
+			<div class="rebeatsIsTextBox normalFont">We know that learning English can be hard and boring, so we challenged ourselves to create something so fun and easy that all the learning happens without even realising. That’s how ReBeats was born; a game that improves your English by watching your favourite music videos on YouTube - a Spotify for language learning.</div>
+			
 			<hr align="center" width="70%" noshade size="1px">
 			
 			<div id="quotes">
-				
+
 				<div id="quote1" class="quote"></div>
-			
 				<div id="quote2" class="quote"></div>
-
 				<div id="quote3" class="quote"></div>
-
-				<script language="javascript">
-					scrollQuote();
-				</script>
 
 			</div>
 
 			<hr align="center" width="70%" noshade size="1px">
 
-			<div id="scontainer">
-				<div  class="tNormal">Each one of us learns in his or her own ways, and the best way to learn something is to enjoy it, and to want do it again. The best learning doesn’t feel like studying at all; it just feels good. Our personal passions - whether it be music, film or football - are filled with fantastic language that can motivate us better than any coursebook. So forget studying, and start learning through what you love.</div>
-			</div>
-
+			<div  class="rebeatsIsTextBox normalFont">Each one of us learns in his or her own ways, and the best way to learn something is to enjoy it, and to want do it again. The best learning doesn’t feel like studying at all; it just feels good. Our personal passions - whether it be music, film or football - are filled with fantastic language that can motivate us better than any coursebook. So forget studying, and start learning through what you love.</div>
+			
+			<!-- JS functions called by the section one -->
+				<script language="javascript">
+							scrollQuote();
+				</script>
 		</section>
 
 		<footer>
@@ -397,8 +418,12 @@
 				<img src="assets/img/tonguesten-logo-footer.png">
 				<a href="http://wayra.org/unltd/" target="_blank"><img src="assets/img/wayra-logo.png"></a>
 			</div>
-			<div class="rights tSmall">Copyright © 2014 Tonguesten Limited, All rights reserved. Proud member of the Wayra family. WAYRA UNLTD, 2-10 Capper St, London WC1E 6JA</div>
-			<div class="contacts tSmall">Get in touch: <a href="https://www.facebook.com/weareT10" class="white bold" target="_blank">FACEBOOK</a>, <a href="https://twitter.com/weareT10" class="white bold" target="_blank">TWITTER</a>, <a href="mailto:mariaz@tonguesten.com" class="white bold">EMAIL</a></div>		
+
+			<div class="rights tSmall">Copyright © 2014 Tonguesten Limited, All rights reserved. Proud member of the Wayra family. WAYRA UNLTD, 2-10 Capper St, London WC1E 6JA
+			</div>
+			
+			<div class="contacts tSmall">Get in touch: <a href="https://www.facebook.com/weareT10" class="white bold" target="_blank">FACEBOOK</a>, <a href="https://twitter.com/weareT10" class="white bold" target="_blank">TWITTER</a>, <a href="mailto:mariaz@tonguesten.com" class="white bold">EMAIL</a>
+			</div>
 		</footer>
 	</body>
 </html>

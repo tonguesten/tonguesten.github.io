@@ -49,35 +49,35 @@ RESPONSIVE
 
 /*First section*/
 
-.tryBut:hover {
+.tryIt:hover {
 	-webkit-animation: butHover 0.125s;
 }
 
-#title{
+#scrollMotion{
 	-webkit-animation: appearTop 0.5s;
 }
 
-#product{
+#productImage{
 	-webkit-animation: appear 0.5s;
 }
 
-#cta-button{
+#callToActionButton{
 	-webkit-animation: bounceIn 1.5s;
 }
 
-.tryBut:hover {
+.tryIt:hover {
 	animation: butHover 0.125s;
 }
 
-#title{
+#scrollMotion{
 	animation: appearTop 0.5s;
 }
 
-#product{
+#productImage{
 	animation: appear 0.5s;
 }
 
-#cta-button{
+#callToActionButton{
 	animation: bounceIn 1.5s;
 }
 
@@ -100,22 +100,22 @@ RESPONSIVE
 }
 /*fourth section*/
 
-#about img:hover{
+#aboutNav img:hover{
 	-webkit-animation: picHover 0.5s;
 }
 
-#about img:hover{
+#aboutNav img:hover{
 	animation: picHover 0.5s;
 }
 
-#pics{
+#peopleContainer{
     -webkit-animation: zoomInUp 1s;
     animation: zoomInUp 1s;
 }
 
 /*hiring*/
 
-#imgWwu{
+#jobsImage{
     -webkit-animation: slideDown 0.5s;
     animation: slideDown 0.5s;
 }
