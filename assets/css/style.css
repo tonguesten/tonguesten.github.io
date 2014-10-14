@@ -1,418 +1,429 @@
 /* GLOBAL */
 
-html,
-body {
-	height: 100%;
-	max-height: 100%;
-	overflow-y: visible; 
+	html,
+	body {
+		height: 100%;
+		max-height: 100%;
+		overflow-y: visible; 
 
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	
-	cursor:default;
-}
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		
+		cursor:default;
+	}
 
-section {
-	position: relative;
-	width: 100%;
-	height: 680px;
-	top: 70px;
-	text-align: center;
-}
+	section {
+		position: relative;
+		width: 100%;
+		min-height: 648px;
+		top: 50px;
+		text-align: center;
+	}
 
-p {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
+	p {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
 
-img {
-	max-width: 100%;
-}
+	img {
+		max-width: 100%;
+	}
 
-footer{
-	position: relative;
-	text-align: center;
-}
+	footer{
+		position: relative;
+		text-align: center;
+		height: auto;
+	}
 
 /* NAVIGATION BAR */
 
-#navigationBar {
-	position: fixed; 
-	width: 100%;
-	height: 60px;
-	z-index: 10;
-}
+	#navigationBar {
+		position: fixed; 
+		width: 100%;
+		height: 60px;
+		z-index: 10;
+	}
 
-#bigLogo {
-	position: relative;
-	width: 180px;
-	height:83px;
-	padding-right: 5px;
-	border-radius: 0px 15px 15px 15px ;
-	z-index: 9;
-}
+	#bigLogo {
+		position: relative;
+		width: 180px;
+		height:83px;
+		padding-right: 5px;
+		border-radius: 0px 15px 15px 15px ;
+		z-index: 9;
+	}
 
-#logo {
- 	position:relative;
- 	display: inline-block;
- 	width:150px;
- 	margin-bottom: 5px;
- 	top:2px;
- 	left:15px;
-}
+	#logo {
+	 	position:relative;
+	 	display: inline-block;
+	 	width:150px;
+	 	margin-bottom: 5px;
+	 	top:2px;
+	 	left:15px;
+	}
 
-#navigationButtons {
-	position: absolute;
-	display: inline-block;
-	left: 192px;
-	top:0px;
-}
+	#navigationButtons {
+		position: absolute;
+		display: inline-block;
+		left: 192px;
+		top:0px;
+	}
 
-#typeSelector {
-	position: absolute;
-	float: left;
-	width: 310px;
-	height: 60px;
-	top:0px;
-	left: 0px;
-	z-index:8;
-	border-radius: 0px 0px 10px 10px;
-}
+	#navigationRight {
+		position: relative;
+		display: inline-block;
+	}
 
-#subscriptionText {
-	position: relative;
-	display: inline-block;
-	top: 20%;
-}
+	#resizeNavigationBar {
+		display: none;
+	}
 
-#subscriptionButtons {
-	position: relative;
-	display: inline-block;
-	top:7%;
-}
+	#typeSelector {
+		position: absolute;
+		float: right;
+		width: 260px;
+		height: 60px;
+		top:0px;
+		z-index:8;
+		border-radius: 0px 0px 5px 5px;
+	}
 
-#socialButtons {
-	position: absolute;
-	display: inline-block;
-	width:90px;
-	right: 10px;
-	top:15px;
-}
+	#subscriptionText {
+		position: relative;
+		display: inline-block;
+		top: 20%;
+	}
 
-.sNavigationButton {
-	position: relative;
-	display: inline-block;
-	height: 30px;
-	padding-top: 25px;
-	padding-right: 20px;
-}
+	#subscriptionButtons {
+		position: relative;
+		display: inline-block;
+		top:7%;
+	}
 
-.subscriptionType {
-	display: inline-block; 
-	padding:0px;
-	padding-right: 10px;
-	padding-left: 10px; 
-	border-radius:4px; 
-	margin: 0 0 10px 4px; 
-	cursor: pointer; 
-	clear:both;   
-}
+	#socialButtons {
+		position: absolute;
+		display: inline-block;
+		width:90px;
+		right: 10px;
+		top:15px;
+	}
 
-.socialButton {
-	position: relative;
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-}
+	.sNavigationButton {
+		position: relative;
+		display: inline-block;
+		height: 30px;
+		padding-top: 25px;
+		padding-right: 20px;
+	}
 
-.visible {
-	display:block;
-}
+	.subscriptionType {
+		display: inline-block; 
+		padding:0px;
+		padding-right: 5px;
+		padding-left: 5px; 
+		border-radius:4px; 
+		margin: 0 0 10px 4px; 
+		cursor: pointer; 
+		clear:both;   
+	}
 
-.invisible {
-	display:none;
-}
+	.socialButton {
+		position: relative;
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+	}
+
+	.visible {
+		display:block;
+	}
+
+	.invisible {
+		display:none;
+	}
 
 /* PRINCIPAL SECTION */
 
-#rebeatsLogo {
-	position: relative;
-	display: inline-block;
-	width: 240px;
-	top:15px;
-	margin-bottom: 30px;
-}
+	#rebeatsLogo {
+		position: relative;
+		display: inline-block;
+		width: 240px;
+		top:15px;
+		margin-bottom: 30px;
+	}
 
-#productImage {
-	position: relative;
-	display: block;
-	width:45%;
-	left: 27.5%;
-}
+	#productImage {
+		position: relative;
+		display: block;
+		width:40%;
+		left: 30%;
+	}
 
-#scrollMotion {
-	position: relative;
-	display: inline-block;
-	width:100%;
-	margin-top: 1%; 
-	margin-bottom: 0;
-}
+	#scrollMotion {
+		position: relative;
+		display: inline-block;
+		width:100%;
+		margin-top: 1%; 
+		margin-bottom: 0;
+	}
 
-#callToActionButton {
-	position: relative;
-	display: block;
-	width:100%;
-	height:65px;
-	padding-top: 10px;
-	padding-bottom: 20px;
-}
+	#callToActionButton {
+		position: relative;
+		display: block;
+		width:100%;
+		height:65px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
 
-.sectionLogo {
-	width: 240px;
-	position: relative;
-	display: inline-block;
-	top:15px;
-	margin-bottom: 30px;
-}
+	.tryIt {
+		display:inline-block;
+		width: 350px;
+		height:65px;
+		border-radius: 7px;
+		line-height:61px;
+	}
 
-.tryIt {
-	display:inline-block;
-	width: 350px;
-	height:65px;
-	border-radius: 7px;
-	line-height:61px;
-}
-
-.tryIt:hover { 
-	position:relative;
-}
+	.tryIt:hover { 
+		position:relative;
+	}
 
 /* FEATURES SECTION */
 
-#featuresContainer {
-	position: relative;
-	float: left;
-	width: 90%;
-	height:60%;
-	left: 5%;
-	top: 75px;
-}
+	#featuresLogo {
+		width: 240px;
+		position: relative;
+		display: inline-block;
+		top:75px;
+		margin-bottom: 30px;
+	}
 
-.featureContainer {
-	position: relative;
-	display: inline-block;
-	width: 33%;
-	height: 100%;
-	vertical-align: middle;
-}
+	#featuresContainer {
+		position: relative;
+		display: inline-block;
+		width: 90%;
+		height:60%;
+		top: 75px;
+	}
 
-.featureImage {	
-	position: relative;
-	display: inline-block;
-	height:90%;
-	margin-bottom:10px; 
-	vertical-align: top;
-}
+	#moreFeaturesLink {
+		position: relative;
+		display: block;
+		float: right;
+		right: 10%;
+		margin-top: 25px;
+	}
 
-.verticalImage {
-	width:37%;
-	min-width: 150px;
-}
+	.featureContainer {
+		position: relative;
+		display: inline-block;
+		width: 30%;
+		height: 100%;
+		vertical-align: middle;
+	}
 
-.verticalImage:hover {
-	width:39%;
-}
+	.featureImage {	
+		position: relative;
+		display: inline-block;
+		height: 75%;
+		margin-bottom:10px; 
+		vertical-align: top;
+	}
 
-.horizontalImage {
-	width:80%;
-	min-width: 280px;
-}
+	.verticalImage {
+		width:37%;
+		min-width: 150px;
+	}
 
-.horizontalImage:hover {
-	width:82%;
-}
+	.horizontalImage {
+		width:80%;
+		min-width: 280px;
+	}
 
-.featureTitle {
-	position: relative;
-	display: inline-block;
-	width:80%;
-	height:10%;
-	vertical-align: bottom;
-}
+	.featureTitle {
+		position: relative;
+		display: inline-block;
+		width:80%;
+		height:10%;
+		vertical-align: bottom;
+	}
 
 /* MORE-FEATURES SECTION */
 
-#moreFeaturesContainer {
-	position:relative;
-	width:90%;
-	height: 85%;
-	top:12.5%;
-	left:5%;
-}
+	.moreFeatureContainer {
+		position: relative;
+		display: inline-block;
+		width: 90%;
+		height: 130px;
+		padding:5px;
+		top: 80px;
+		padding-bottom: 25px;
+	}
 
-.moreFeatureContainer {
-	position: relative;
-	width: 90%;
-	height: 130px;
-	left:5%;
-	margin:5px;
-}
+	.moreFeatureText {
+		position: relative;
+		display: inline-block;
+		width: 70%;
+		height: 100%;
+		padding-top: 60px;
+	}
 
-.moreFeatureText {
-	position: relative;
-	display: inline-block;
-	width: 70%;
-	height: 100%;
-	padding-top: 60px;
-}
+	.floatRight {
+		float: right;
+	}
 
-.floatRight {
-	float: right;
-}
+	.floatLeft {
+		float: left;
+	}
 
-.floatLeft {
-	float: left;
-}
-
-.moreFeatureImage {
-	position: relative;
-	display: inline-block;
-	width:30%;
-	height: 100px;
-}
+	.moreFeatureImage {
+		position: relative;
+		display: inline-block;
+		width:25%;
+		height: 100px;
+	}
 
 /* REBEATS IS SECTION */
 
-#rebeatsIsTitle { 
-	position: relative;
-	display: inline-block;
-	width: 75%;
-	padding-top:75px;
-	padding-bottom: 10px;
-}
+	#rebeatsIsNav {
+		height: auto;
+	}
 
-.rebeatsIsTextBox {
-	position: relative;
-	display: inline-block;
-	width: 75%;
-	padding-top:20px;
-	padding-bottom: 10px;
-}
+	#rebeatsIsTitle { 
+		position: relative;
+		display: inline-block;
+		width: 75%;
+		padding-top:75px;
+		padding-bottom: 10px;
+	}
 
-#quotes {
-	position: relative;
-	width:100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
+	.rebeatsIsTextBox {
+		position: relative;
+		display: inline-block;
+		width: 75%;
+		height: auto;
+		padding-top:20px;
+		padding-bottom: 10px;
+	}
 
-.quote {
-	position: relative;
-	display: inline-block;
-	width:380px;
-	padding:10px;
-	vertical-align: middle;
-}
+	#quotes {
+		position: relative;
+		width:100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 
-#testimonialText {
-	position: relative;
-	display: inline-block;
-	width:70%;
-	vertical-align: middle;
-}
+	.quote {
+		position: relative;
+		display: inline-block;
+		width:380px;
+		padding:10px;
+		vertical-align: middle;
+	}
+
+	#testimonialText {
+		position: relative;
+		display: inline-block;
+		width:70%;
+		vertical-align: middle;
+	}
 
 /* HIRING SECTION */
 
-#jobsImage {
-	position:absolute;
-	display: inline-block;
-	float: right;
-	top:0;
-}
+	#jobsImage {
+		position:absolute;
+		display: inline-block;
+		float: right;
+		top:0;
+	}
 
-#jobsContainer {
-	position: relative;
-	padding-top: 100px;
-}
+	#jobsContainer {
+		position: relative;
+		padding-top: 75px;
+		padding-bottom: 50px;
+	}
 
-.job {
-	position: relative;
-	display: inline-block;
-	width: 40%;
-	min-height: 300px;
-	padding: 15px;
-	padding-left: 1%;
-	margin: 20px;
-	border-style: solid;
-	border-radius: 5px;
-	border-color: rgba(1,170,255,1);
-	border-width: 3px;
-	vertical-align: top;
-}
+	.job {
+		position: relative;
+		display: inline-block;
+		width: 40%;
+		min-height: 300px;
+		padding: 15px;
+		padding-left: 1%;
+		margin: 20px;
+		border-style: solid;
+		border-radius: 5px;
+		border-color: rgba(1,170,255,1);
+		border-width: 3px;
+		vertical-align: top;
+	}
 
 /* ABOUT SECTION */
 
-#peopleContainer {
-	position: relative;
-	width:80%;
-	height:32.5%;
-	top:100px;
-	left:10%;
-}
+	#peopleContainer {
+		position: relative;
+		display: inline-block;
+		width:80%;
+		height:32.5%;
+		top:100px;
+	}
 
-#aboutNav img {
-	width: 65%;
-	border-radius: 70px; /*half of the width of the image - less would round off corners*/
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 17.5%;
-	margin-right: 17.5%;
-	opacity: 0.6;
-}
+	#aboutNav img {
+		width: 65%;
+		border-radius: 70px; /*half of the width of the image - less would round off corners*/
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 17.5%;
+		margin-right: 17.5%;
+		opacity: 0.6;
+	}
 
-#aboutNav img:hover {
-	opacity: 1;
-}
+	#aboutNav img:hover {
+		opacity: 1;
+	}
 
-.sectionTitle {
-	position: relative;
-	display: inline-block;
-	width: 80%;
-	min-width:500px;
-	top: 50px;
-}
+	.sectionTitle {
+		position: relative;
+		display: inline-block;
+		width: 80%;
+		min-width:500px;
+		top: 50px;
+	}
 
-.teamCol {
-	position: relative;
-	display: inline-block;
-	width: 19.5% ;
-	text-decoration: none;
-}
+	.teamCol {
+		position: relative;
+		display: inline-block;
+		width: 19.5% ;
+		text-decoration: none;
+	}
 
 /* FOOTER */
+	footer {
+		margin-top: 50px;
+	}
 
-.logos img {
-	position: relative;
-	display: inline-block;
-	width:10%;
-	padding-right: 15%;
-	padding-left: 15%;
-	padding-bottom: 5px;
-	padding-top: 10px;
-}
+	.logos img {
+		position: relative;
+		display: inline-block;
+		width:10%;
+		padding-right: 15%;
+		padding-left: 15%;
+		padding-bottom: 5px;
+		padding-top: 10px;
+	}
 
-.rights {
-	padding-bottom:2px; 
-}
+	.rights {
+		padding-bottom:2px; 
+	}
 
-.contacts {
-	padding-bottom: 15px;
-}
+	.contacts {
+		padding-bottom: 15px;
+	}

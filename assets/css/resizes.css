@@ -2,444 +2,358 @@
 
 
 
-@media (max-width: 930px){
+@media (max-width: 1070px){
+	/* GLOBAL */
+		section {
+			min-height: 520px;
+		}
 
-#newsletter{
-	display: none;
-}
-/*FIRST SECTION*/
+	/* NAVIGATION BAR */
+		#newsletter {
+			text-align: center;
+		}
 
-#principalNav{
-	width: 100%;
-	height:500px;
-	z-index: 9;
-}
+		#mc_embed_signup {
+			position: absolute;
+			display: inline-block;
+			width: 260px;
+			height: 50px;
+			float: right;
+			padding: 0;
+			padding-left: 3px;
+			margin: 0;
+			top:60px;
+			right: 1px;
+			background-color: rgba(0,154,255,1);
+			opacity: 0.3;
+			border-radius: 0px 0px 5px 5px;
+			border-color: white;
+			border-width: 1px;
+			border-style: solid;
+		}
 
-#rebeatsLogo{
-	width: 250px;
-	position: relative;
-	display: inline-block;
-	top:20px;
-	margin-bottom: 40px;
-	padding-left: 20%;
-	padding-right: 20%;
-}
-
-#productImage{
-	width:300px;
-	position: relative;
-	display: inline-block;
-	top:10px;
-	left:0;
-}
-
-.tryIt {
-	width: 250px;
-	border-radius: 7px;
-	display:inline-block;
-	height:65px;
-	line-height:61px;
-	text-align:center;
-}
-
-/*SECOND SECTION*/
+		#mc_embed_signup:hover {
+			opacity: 0.7;
+		}
 
 
-#featuresNav{
-	width: 100%;
-	height: 950px;
-	position: relative;
-	text-align: center;
-}
+		#typeSelector {
+			height: 50px;
+			background-color: rgba(0,154,255,1);
+		}
 
-#featuresLogo{
-	width:35%;
-	position: relative;
-	display: inline-block;
-	top:50px;
-	left:0;
-}
+	/* PRINCIPAL SECTION */
 
-#featuresContainer{
-	width: 90%;
-	height:60%;
-	position: relative;
-	left:0;
-	top:120px;
-}
+		#rebeatsLogo {
+			padding-left:30%;
+			padding-right:30%;
+		}
 
-.featureContainer{
-	width:100%;
-	height:250px;
-	position: relative;
-	display: block;
-	vertical-align: middle;
-}
+		#productImage {
+			display: inline-block;
+			width: 428px;
+			left:0;
+		}
 
-.verticalImage {
-	width:100px;
-	min-width: 0;
-}
+		#scrollMotion {
+			font-size: 25px;
+		}
 
-.verticalImage:hover {
-	width:105px;
-}
+		.tryIt {
+			width: 250px;
+			border-radius: 7px;
+			display:inline-block;
+			height:65px;
+			line-height:61px;
+			text-align:center;
+		}
 
-.horizontalImage {
-	width:200px;
-	min-width: 0;
-}
+	/* FEATURES SECTION */
 
-.horizontalImage:hover {
-	width:205px;
-}
+		.verticalImage {
+			width:100px;
+			min-width: 0;
+		}
 
-.featureTitle{
-	width:45%;
-	height: 100%;
-	position: relative;
-	float: right;
-	display: inline-block;
-	top:20%;
-	padding-left:20px;
-}
+		.horizontalImage {
+			width:200px;
+			min-width: 0;
+		}
 
+		.featureTitle{
+			font-size: 18px;
+		}
 
+	/* MORE FEATURES SECTION */
 
-/*moreFeaturesNav SECTION*/
+		.moreFeatureContainer{
+			width: 90%;
+			height: 200px;
+			padding-top: 25px;
+		}
 
-#moreFeaturesNav{
-	width: 100%;
-	height: auto;
-	position: relative;
-	text-align: center;
-	top:50px;
-}
+		.moreFeatureText{
+			position: relative;
+			display: block;
+			width: 50%;
+			height: auto;
+			float: left;
+			padding-top: 20px;
+		}
 
-#moreFeaturesContainer{
-	width:90%;
-	height: 85%;
-	position:relative;
-	top:12.5%;
-	left: 0;
-	display: inline-block;
-}
+		.moreFeatureImage{
+			width:30%;
+			float: right;
+			right: 50px;  
+		}
 
-.moreFeatureContainer{
-	width: 90%;
-	height: 350px;
-	position: relative;
-	display: block;
-	text-align: center;
-	left:0;
-	margin-bottom:0px;
-}
+	/* HIRING SECTION */
 
-.moreFeatureText{
-	width: 100%;
-	height: 40%;
-	position: relative;
-	float: left;
-	display: block;
-	padding-top: 20px;
-}
+		#jobsImage {
+			display: none;
+		}
 
-.moreFeatureImage{
-	width:350px;
-	height: 60%;
-	position: relative;
-	display: block;
-	left:0;
-}
+		.job {
+			width: 70%;
+		}
 
-/*FOURTH SECTION*/
+	/* ABOUT SECTION */
 
-#rebeatsIsNav{
-	width: 100%;
-	position: relative;
-	text-align: center;
-}
+		#aboutNav{
+			margin-bottom: 200px;
+		}
 
-/*about section*/
+		.teamCol {
+			width: 250px;
+		}
 
-#aboutNav{
-	width: 90%;
-	height: auto;
-	position: relative;
-	text-align: center;
-	left:5%;
-	z-index: 9;
-	top:60px;
-	margin-bottom: 200px;
-}
+		#aboutNav img{
+			width: 45%;
+			border-radius: 100px;
+		}
 
-#teamTitle{
-	width: 80%;
-	min-width:0;
-	position: relative;
-	display: inline-block;
-	left:0;
-	top: 50px;
-}
-
-#peopleContainer{
-	width:100%;
-	height:32.5%;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	left:0;
-	top:100px;
-}
-
-.teamCol {
-	width: 250px ;
-	position: relative;
-	display: inline-block;
-	text-decoration: none;
-}
-
-#aboutNav img{
-	width: 45%;
-	border-radius: 100px; /*half of the width of the image - less would round off corners*/
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 17.5%;
-	margin-right: 17.5%;
-	opacity: 0.6;
-}
-
-#jobsImage {
-	display: none;
-}
-
-.job {
-	width: 70%;
-}
-
-/*Typography*/
-
-.tSubtitle {
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size: 22px;
-}
-
-.tryIt {
-	font-family:"proxima_nova_regular", Helvetica, Arial, sans-serif;
-	font-weight:bold;
-	font-size:25px;
-}
-
-h3 {
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size:15px;
-	text-align: center;
-}
-
-h4 {
-	font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
-	font-size:13px;
-	text-align: center;
-}
-
-
-/*ANIMATION*/
-
-@-webkit-keyframes photo1Hover {
-    0%{width:100px;}
-    100%{width:105px;}
-}
-
-@-webkit-keyframes photo2Hover {
-    0%{width:200px;}
-    100%{width:205px;}
-}
-
-@keyframes photo1Hover {
-    0%{width:100px;}
-    100%{width:105px;}
-}
-
-@keyframes photo2Hover {
-    0%{width:200px;}
-    100%{width:205px;}
-}
+	/* FOOTER */
+		.logos img {
+			position: relative;
+			display: inline-block;
+			width:10%;
+			padding-right: 5%;
+			padding-left: 5%;
+			padding-bottom: 5px;
+			padding-top: 10px;
+		}
 
 }
+@media (max-width: 725px){
 
-@media (max-width: 550px){
+	/* GLOBAL */
 
+		section {
+			height: auto;
+			min-height: 350px;
+		}
 
-#navigationBar{
-	background-color: white;
-	text-align: center;
-	height:110px;
-	border-color: rgba(0,154,255,0.5);
-	border-width: 1px;
-}
+	/* NAVIGATION BAR */
 
-#bigLogo{
-	position: relative;
-	display: inline-block;
-	width: 180px;
-	height:90px;
-	padding-right: 0;
-	border-radius: 0px 50px 50px 0px ;
-}
+		#navigationBar {
+			background-color: white;
+			text-align: center;
+			height:60px;
+			border-color: rgba(0,154,255,1);
+			border-width: 1px;
+		}
 
+		#bigLogo {
+			position: relative;
+			display: inline-block;
+			background: rgba(255,255,255,1);
+			padding-right: 23px;
+			padding-left: 10px;
+			height: 61px;
+		}
 
-#logo{
- 	width:200px;
- 	position:relative;
- 	display: inline-block;
- 	top:2px;
- 	margin-bottom: 5px;
- 	left:0;
-}
+		#logo {
+		 	width:200px;
+		 	position:relative;
+		 	display: inline-block;
+		 	top:2px;
+		 	margin-bottom: 5px;
+		 	left:0;
+		}
 
-#navigationButtons{
-	display: none;
-}
+		#newsletter {
+			display: none;
+		}
 
+		#socialButtons {
+			display:none;
+		}
 
-#newsletter{
-	display: none;
-}
+		#navigationButtons {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 50px;
+			left: 0;
+			top: 60px;
+			background-color: rgba(255,255,255,1);
+			border-bottom-style: solid;
+			border-color: rgba(0,154,255,0.5);
+			border-width: 1px;
+			opacity: 0.7;
+		}
 
-#socialButtons{
-	display:none;
-}
+		#navigationButtons:hover {
+			opacity: 0.9;
+		}
 
-#principalNav{
-	min-width: 280px;
-	height:450px;
-	padding-top:100px;
-}
+		.tNavigationButton {
+			color: rgba(0,154,255,1);
+		}
 
-#scrollMotion{
-	display:none;
-}
+		#featuresButton {
+			display: none;
+			float: left;
+			padding-top: 20px;
+		}
 
-#rebeatsLogo{
-	width:150px;
-	top:-30px;
-	margin-bottom: 0;
-}
-#productImage{
-	width: 90%;
-	min-width: 260px;
-	display: inline-block;
-	margin-bottom:15px;
-}
+		#rebeatsIsButton {
+			display: none;
+			float: left;
+			padding-top: 20px;
+		}
 
-#featuresNav{
-	position: relative;
-	height:1000px;
-}
+		#hiringButton {
+			float: left;
+			padding-top: 20px;
+			padding-left: 5%;
+		}
 
-#featuresLogo{
-	width:200px;
-	top:50px;
-}
+		#aboutButton {
+			float: right;
+			padding-top: 20px;
+			padding-right: 5%;
+		}
 
-#featuresContainer{
-	width: 90%;
-	height:60%;
-	position: relative;
-	float: left;
-	left: 5%;
-	top:150px;
-}
+	/* PRINCIPAL SECTION */
 
-.featureContainer{
-	width: 33%;
-	height: 100%;
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
-}
+		#principalNav {
+			padding-top:150px;
+		}
 
-#featuresContainer{
-	width: 90%;
-	height:750px;
-	position: relative;
-	left:0;
-	top:80px;
-}
+		#rebeatsLogo{
+			width:150px;
+			top:-30px;
+			margin-bottom: 0;
+		}
 
-.featureContainer{
-	width:100%;
-	height:250px;
-	position: relative;
-	display: block;
-	vertical-align: middle;
-	text-align: center;
-}
+		#productImage{
+			width: 70%;
+			min-width: 260px;
+			display: inline-block;
+			margin-bottom:15px;
+		}
 
-.verticalImage{
-	width:100px;
-	min-width: 0;
-	height:200px;
-	position: relative;
-	display: inline-block;
-	margin-bottom:10px; 
-}
+		#scrollMotion{
+			display:none;
+		}
 
-.verticalImage:hover{
-	width:105px;
-}
+		.tryIt {
+			display:inline-block;
+			width: 200px;
+			height:50px;
+			border-radius: 7px;
+			line-height:50px;
+			font-size: 20px;
+		}
 
-.horizontalImage{
-	width:200px;
-	min-width: 0;
-	height:200px;
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
-}
+		.tryIt:hover { 
+			position:relative;
+		}
 
-.contactBox{
-	width: 80%;
-}
-.horizontalImage:hover{
-	width:205px;
+	/* FEATURES SECTION */
 
-}
+		#featuresLogo {
+			width: 40%;
+			top:50px;
+		}
 
-.featureTitle{
-	width:100%;
-	height: 70px;
-	position: relative;
-	float: right;
-	display: inline-block;
-	top:15px;
-	margin-bottom: 20px;
-	padding-left:0;
-}
+		#featuresContainer {
+			position: relative;
+			width: 90%;
+			left:0;
+			margin-bottom: 50px;
+		}
 
-#moreFeaturesNav{
-	width: 100%;
-	height: auto;
-	position: relative;
-	text-align: center;
+		.featureContainer {
+			position: relative;
+			display: block;
+			width:100%;
+			height:250px;
+			vertical-align: middle;
+			text-align: center;
+		}
 
-}
+		.featureTitle {
+			position: relative;
+			display: inline-block;
+			width:100%;
+			height: 70px;
+			float: right;
+			top:15px;
+			margin-bottom: 20px;
+			padding-left:0;
+		}
 
-.moreFeatureImage{
-	display: none;
-}
+	/* MORE FEATURES SECTION */
 
-#rebeatsIsNav{
-	width: 100%;
-	height: auto;
-	position: relative;
-	text-align: center;
-}
+		.moreFeatureContainer {
+			width: 90%;
+			height: 100px;
+			float: none;
+			top: 50px;
+			padding: 0;
+			padding-bottom:75px;
+		}
 
-#aboutNav{
-	height:auto; 
-}
+		.moreFeatureImage {
+			display: none;
+		}
+
+		.moreFeatureText {
+			display: table-cell;
+			height:inherit;
+			float: none;
+			width: 90%;
+			padding: 0;
+			vertical-align: middle;
+		}
+
+	/* HIRING SECTION */
+		#jobsNav {
+			padding-top: 50px;
+		}
+
+	/* ABOUT SECTION */
+		#aboutNav {
+			padding-top: 50px;
+		}
+
+		.sectionTitle {
+			width: 300px;
+			min-width: 0;
+			font-size: 20px;
+		}
+
+	/* FOOTER */
+		.logos img {
+			position: relative;
+			display: inline-block;
+			width:15%;
+			padding-right: 5%;
+			padding-left: 5%;
+			padding-bottom: 5px;
+			padding-top: 10px;
+		}
 
 }
