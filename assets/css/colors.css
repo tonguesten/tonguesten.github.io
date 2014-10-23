@@ -6,6 +6,10 @@
 		color:#fff;
 	}
 
+	.blackColor {
+		color:#000;
+	}
+
 	.blueBackground {
 		background: rgba(1,170,255,1);
 	}
@@ -80,6 +84,14 @@
 	#featuresNav {
 		border-bottom-style: dashed;
 		border-color: rgba(255,255,255,0.5);
+		border-width: 1px;
+	}
+
+/* HIRING */
+	
+	#jobsTitle {
+		border-bottom-style: dashed;
+		border-color: rgba(1,170,255,0.5);
 		border-width: 1px;
 	}
 
