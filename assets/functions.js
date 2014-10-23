@@ -40,6 +40,14 @@
 		}
 	}
 
+	function show (identification) {
+		var elemento = document.getElementById(identification);
+		//console.log(elemento);
+		if(elemento.className == "invisible"){
+			elemento.className = "visible";
+		}
+	}
+
 	function newsletter (subscriptionType) {
 		//var kind = document.getElementById("mc-embedded-subscribe-form");
 		//console.log(subscriptionType);
