@@ -58,15 +58,24 @@
 		}else{
 			$('#mc-embedded-subscribe-form').attr('action', "https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c");
 		}
+	}
+
+	function scrollImage(identification) {
+		width = "400px";
+		images = ["assets/img/foto2_1.png", "assets/img/foto2_2.png", "assets/img/foto2_3.png"];
+		aleat = Math.floor(Math.random() * images.length);
+
+		var image = document.getElementById(identification);
+			image.src = images[aleat];
+			image.width = width;
 	}	
 
-	function scrollText(identification){
+	function scrollText(identification) {
 			//console.log(identification);
 			texts = ["Just by watching music videos with ReBeats, </br>Paolo, age 12, spends half an hour a day practising English.",
 					"ReBeats is the best teaching support for Friday afternoons, </br>when you feel the students are bored and waiting for the bell to ring",
 					"Twenty minutes listening to her favourite songs on ReBeats every day, </br>Agnieszka, aged 17, improved her English spelling and grammar."]
-			aleat = Math.random() * texts.length;
-				aleat = Math.floor(aleat);
+			aleat = Math.floor(Math.random() * texts.length);
 
 			var testimonialText = document.getElementById(identification);
 			testimonialText.innerHTML = texts[aleat];
