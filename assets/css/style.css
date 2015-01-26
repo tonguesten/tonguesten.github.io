@@ -152,11 +152,15 @@
 
 /* PRINCIPAL SECTION */
 
+	#principalNav {
+		padding-top: 50px;
+	}
+
 	#rebeatsLogo {
 		position: relative;
 		display: inline-block;
 		width: 240px;
-		top:15px;
+		top: 30px;
 		margin-bottom: 30px;
 	}
 
@@ -367,16 +371,24 @@
 	}
 
 /* ABOUT SECTION */
+	
+	#aboutTitle {
+		position: relative;
+		display: inline-block;
+		width: 400px;
+		top: 30px;
+		margin-bottom: 30px;
+	}
 
 	#peopleContainer {
 		position: relative;
 		display: inline-block;
 		width:80%;
+		margin-top: 30px;
 		height:32.5%;
-		margin-top: 50px;
 	}
 
-	#aboutNav img {
+	#peopleContainer img {
 		width: 65%;
 		border-radius: 70px; /*half of the width of the image - less would round off corners*/
 		margin-top: 20px;
