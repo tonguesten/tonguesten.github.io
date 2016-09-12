@@ -1,243 +1,367 @@
-	<!DOCTYPE html>
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>Tonguesten</title>
+        <meta name="description" content="Everyone can learn English with their favourite music videos using our web app, ReBeats! We are Tonguesten, an Edtech Wayra UK start-up using music for language learning. Learn through what you love.">
+        <meta name="keywords" content="tonguesten, music, english, learning, e-learning, learn through what you love, teach, students, ELT, english tool, schools">
+        <meta name="author" content="Diego Arespacochaga">
+        <meta name="original-template" content="Designed by Robert Berki (https://dribbble.com/shots/1817781--FREEBIE-Spirit8-Digital-agency-one-page-template) and Coded by Jenn Pereira (https://dribbble.com/jennpereira)">
+            
+        <!-- Favicons
+        ================================================== -->
+        <link rel="icon" type="image/png" href="img/tonguesten-icon.png" />
 
-		<meta charset="utf-8">
-		<meta name="description" content="Everyone can learn English with their favourite music videos using o	ur web app, ReBeats! We are Tonguesten, an Edtech Wayra UK start-up using music for language learning. Learn through what you love.">
-		<title>Tonguesten</title>
-		<link rel="icon" type="image/png" href="assets/img/tonguesten-icon.png" />
-		
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		
-		<link rel='stylesheet' href='assets/css/reset.css'>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/typography.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/mailchimp-code.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/resizes.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
-		type="text/javascript" charset="utf-8"></script>
-		
-		<script type="text/javascript" src="assets/functions.js"></script>
-	</head>
+        <!-- Slider
+        ================================================== -->
+        <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+        <link href="css/owl.theme.css" rel="stylesheet" media="screen">
 
-	<body>
-	
-		<div id="navigationBar" class="blueBackground">
+        <!-- Stylesheet
+        ================================================== -->
+        <link rel="stylesheet" type="text/css"  href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-			<a href="#principalNav" onclick="javascript: show('typeSelector');">
-				<div id="bigLogo" class="whiteBackground">
-					<div id="logo">
-						<img src="assets/img/tonguesten-logo.png">
-					</div>
-				</div>
-			</a>
-			
-			<div id="newsletter">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    </head>
+    <body>
+        <!-- Navigation
+        ==========================================-->
+        <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top blue">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Tonguesten</a>
+            </div>
 
-				<div id="mc_embed_signup">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html" class="page-scroll">Home</a></li>
+                <li><a href="api.html" class="page-scroll">API</a></li>
+                <li><a href="engage.html" class="page-scroll">Engage</a></li>
+                <li><a href="playground.html" class="page-scroll">Playground</a></li>
+                <li><a href="about.html" class="page-scroll">About us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-					<div class="visible" id="typeSelector">
-						
-						<span id="subscriptionText" class=" whiteColor smallFont centerAlign">Subscribe to our </br>newsletter</span>
-						
-						<div id="subscriptionButtons">
-							<a href="javascript:hideShow ('typeSelector'); newsletter('teacher');">
-								<input type="submit" value="Teacher" name="teacher" class="subscriptionType smallFont boldStyle centerAlign">
-							</a>
+        <!-- Presentation Section
+        ==========================================-->
+        <div id="tf-home" class="text-center">
+            <div class="overlay-blue">
+                <div class="content">
+                    <p class="lead">Intelligently using your favourite music, film and TV video content for language learning.</br><strong>Learn through what you love.</strong></p>
+                    <div id="video-box" class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item presentation-video" src="https://www.youtube.com/embed/0hdDm9AlU4I?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0" ></iframe>
+                    </div>
+                    <p class="lead"><small>"Ninety percent of the problem in teaching, or maybe ninety-eight percent, is just to help the students get interested.”<br><em>Noam Chomsky</em></small></p>
+                    <a href="#engage-sum" class="fa fa-angle-down page-scroll white"></a>
+                </div>
+            </div>
+        </div>
 
-							<a href="javascript:hideShow ('typeSelector'); newsletter('student');">
-								<input type="submit" value="Student" name="student" class="subscriptionType smallFont boldStyle centerAlign">
-							</a>
-						</div>
-					</div>
+        <!-- Engage Summary Section
+        ==========================================-->
+        <div id="engage-sum" class="text-center">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>Our <strong>technology.</strong> Your <strong>ideas.</strong></h2>
+                    <div class="line"></div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="intro">
+                       <p>A three years research. From London to India.<br>The knowledge of the best ELT experts, joined to the most innovative tools and artificial intelligence technologies:<br><strong>Just to offer you the most powerful language technology you've ever seen.</strong></p>
+                    </div>
+                </div>
+                <div class="space"></div>
+                <div class="row">
+                    <a href="api.html">
+                        <div class="col-md-4 col-sm-6 service">
+                            <i class="fa fa-cogs"></i>
+                            <h4><strong>How it works</strong></h4>
+                        </div>
+                    </a>
 
-					<form action="https://tonguesten.us4.list-manage.com/subscribe/post?u=6aa5f15a46f8f8bab75c1b533&amp;id=d27518147c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your@emailaddress.com" required>
-					    
-					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    
-					    <div style="position: absolute; display:inline-block; left: -5000px;">
-					    	<input type="text" name="b_6aa5f15a46f8f8bab75c1b533_d27518147c" tabindex="-1" value="">
-					    </div>
-					    
-					    <div class="clear">
-					    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-					    </div>
+                    <a href="api.html">
+                        <div class="col-md-4 col-sm-6 service">
+                            <i class="fa fa-book"></i>
+                            <h4><strong>User Cases</strong></h4>
+                        </div>
+                    </a>
 
-					</form>
-				</div>
-			</div>
+                    <a href="api.html">
+                        <div class="col-md-4 col-sm-6 service">
+                            <i class="fa fa-lightbulb-o"></i>
+                            <h4><strong>Services</strong></h4>
+                        </div>
+                    </a>
+                </div>
+                <br><br><br>
+                <button type="button" onclick="location.href = 'api.html';" class="btn tf-btn btn-default center">TELL ME MORE</button>
+                <br>
+                <hr>
+            </div>
+        </div>
 
-			<div id="navigationButtons">
-				<a href="#featuresNav" onclick="javascript: show('typeSelector');">
-					<div id="featuresButton" class="tNavigationButton sNavigationButton ">Features</div>
-				</a>
+        <!-- Language Tools Section
+        <div id="language-tools">
+            <div class="container">
+                <div class="section-title text-center center">
+                    <h2><strong>OUR TOP LANGUAGE TOOLS</strong></h2>
+                    <div class="line"></div>
+                    <div class="clearfix"></div>
+                    <medium>We’re all about sharing teaching tools, so we thought we’d let you know about some other companies who are also developing really great educational technology. Here’s a list - click on the links to find out more about them.</medium>
+                </div>
 
-				<a href="#rebeatsIsNav" onclick="javascript: show('typeSelector');">
-					<div id="rebeatsIsButton" class="tNavigationButton sNavigationButton ">What is ReBeats?</div>
-				</a>
-				
-				<a href="about.html" onclick="javascript: show('typeSelector');">
-					<div id="aboutButton" class="tNavigationButton sNavigationButton ">Our team</div>
-				</a>
-				
-				<!-- <a href="hiring.html" onclick="javascript: show('typeSelector');">
-					<div id="hiringButton" class="tNavigationButton sNavigationButton">We're Hiring</div>
-				</a> -->
+                <div class="categories">
+                    
+                    <ul class="cat">
+                        <li class="pull-left"><h4>Filter by Type:</h4></li>
+                        <li class="pull-right">
+                            <ol class="type">
+                                <li><a href="#" data-filter="*" class="active">All</a></li>
+                                <li><a href="#" data-filter=".web">Spelling</a></li>
+                                <li><a href="#" data-filter=".photography">Grammar</a></li>
+                                <li><a href="#" data-filter=".app" >Meaning</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
 
-			</div>
+                <div id="lightbox" class="row">
 
-			<div id="socialButtons">
-				<a href="http://www.wearet10.tumblr.com" target="_blank">
-					<div id="tumblr" class="socialButton"></div>
-				</a>
-				<a href="https://www.facebook.com/weareT10" target="_blank">
-					<div id="facebook" class="socialButton"></div>
-				</a>
-				<a href="https://twitter.com/weareT10" target="_blank">
-					<div id="twitter" class="socialButton"></div>
-				</a>
-			</div>
-		</div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                        <div class="portfolio-item">
+                            <div class="hover-bg">
+                                <a href="#">
+                                    <div class="hover-text">
+                                        <h4>Logo Design</h4>
+                                        <small>Branding</small>
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img src="img/portfolio/01.jpg" class="img-responsive" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-		<section id="principalNav">
-		<a name="principalNav"></a>	
+                    <div class="col-sm-6 col-md-3 col-lg-3 photography app">
+                        <div class="portfolio-item">
+                            <div class="hover-bg">
+                                <a href="#">
+                                    <div class="hover-text">
+                                        <h4>Logo Design</h4>
+                                        <small>Branding</small>
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img src="img/portfolio/02.jpg" class="img-responsive" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-				<div id="rebeatsLogo">
-					<img src="assets/img/rebeats_pic.png">
-				</div>
-				
-				<div id="productImage">
-						<a href="http://www.rebeats.tv">
-							<img id="rebeatsExample">
-						</a>
-				</div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                        <div class="portfolio-item">
+                            <div class="hover-bg">
+                                <a href="#">
+                                    <div class="hover-text">
+                                        <h4>Logo Design</h4>
+                                        <small>Branding</small>
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img src="img/portfolio/03.jpg" class="img-responsive" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-				<div id="scrollMotion" class="bigFont centerAlign">
-					<!-- The scrollText function will write here the different titles -->
-				</div>
-				
-				<div id="callToActionButton" class="semibigFont boldStyle centerAlign">
-					<a href="http://www.rebeats.tv" class="tryIt bigFont boldStyle centerAlign">Try it now - for free</a>
-				</div>
-	
-				<!-- JS functions called by the section one -->
-					<script language="javascript">
-						scrollImage('rebeatsExample');
-						scrollText('scrollMotion');
-					</script>
-		</section>
+                    <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                        <div class="portfolio-item">
+                            <div class="hover-bg">
+                                <a href="#">
+                                    <div class="hover-text">
+                                        <h4>Logo Design</h4>
+                                        <small>Branding</small>
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img src="img/portfolio/04.jpg" class="img-responsive" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-3 web">
+                        <div class="portfolio-item">
+                            <div class="hover-bg">
+                                <a href="#">
+                                    <div class="hover-text">
+                                        <h4>Logo Design</h4>
+                                        <small>Branding</small>
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img src="img/portfolio/05.jpg" class="img-responsive" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-3 app">
+                        <div class="portfolio-item">
+                            <div class="hover-bg">
+                                <a href="#">
+                                    <div class="hover-text">
+                                        <h4>Logo Design</h4>
+                                        <small>Branding</small>
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img src="img/portfolio/06.jpg" class="img-responsive" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-3 photography web">
+                        <div class="portfolio-item">
+                            <div class="hover-bg">
+                                <a href="#">
+                                    <div class="hover-text">
+                                        <h4>Logo Design</h4>
+                                        <small>Branding</small>
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img src="img/portfolio/07.jpg" class="img-responsive" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-3 web">
+                        <div class="portfolio-item">
+                            <div class="hover-bg">
+                                <a href="#">
+                                    <div class="hover-text">
+                                        <h4>Logo Design</h4>
+                                        <small>Branding</small>
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img src="img/portfolio/08.jpg" class="img-responsive" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        ==========================================-->
 
 
-		<section id="featuresNav" class="blueBackground">
-		<a name="featuresNav"></a>
-		
-			<div id="featuresLogo">
-				<img src="assets/img/features.png">
-			</div>
+        <!-- Contact Section
+        ==========================================-->
+        <div id="tf-contact" class="text-center">
+            <div class="container">
 
-			<div id="featuresContainer" class="whiteColor semibigFont centerAlign">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
 
-				<div class="featureContainer">
-					<div class="featureImage verticalImage">
-						<img src="assets/img/phone.png">
-					</div>
-					<div class="featureTitle">Mobile, gamified, personalised learning.</div>
-				</div>
+                        <div class="section-title center">
+                            <h2><strong>PLEASE GET IN TOUCH!</strong></h2>
+                            <div class="line"></div>
+                            <div class="clearfix"></div>
+                            <medium>Whether you’re an English language or literacy student, Head Teacher, literacy specialist or potential partner, we’d love to hear from you. We’re always on the look out for new schools and business partners, and the most important people to us are our users. So whether you want to talk about development, funding, student feedback about Engage, or if you’d like to get involved in our next schools trial, let us know. We love to talk about all things tech, language and music, so get in touch and start talking to us.</medium>            
+                        </div>
 
-				<div class="featureContainer">
-					<div class="featureImage horizontalImage">
-						<img src="assets/img/feat2.png">
-					</div>
-					<div class="featureTitle">Automated real time exercise creation.</div>
-				</div>
+                        <form action="mailto:jonathan@tonguesten.com?subject=More Info Request" method="post" enctype="text/plain" id="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Role</label>
+                                        <input type="text" name="role" class="form-control" id="exampleInputPassword1" placeholder="Teacher or student">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Message</label>
+                                <textarea type="text" name="comment" class="form-control" rows="3"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn tf-btn btn-default right">Submit</button>
 
-				<div class="featureContainer">
-					<div class="featureImage verticalImage">
-						<img src="assets/img/feat3.png">
-					</div>
-					<div class="featureTitle">Adaptive engine that learns what you need.</div>
-				</div>
-				<div id="moreFeaturesLink">
-					<a href="#moreFeaturesNav" class="whiteColor mediumFont italicStyle">More features ↓</a>
-				</div>
-			</div>
-		</section>
+                            <script language="JavaScript">
+                                var frmvalidator  = new Validator("contactform");
+                                frmvalidator.addValidation("email","req","Please provide your email");
+                                frmvalidator.addValidation("email","email",
+                                  "Please enter a valid email address");
+                            </script>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Section
+        ==========================================-->
+        <nav id="footer">
+            <div class="container">
+                <div class="pull-left fnav">
+                    <h7>Tonguesten © 2015. All rights reserved.</h7>
+                    <p><i>Proud member of the Wayra family. 2-10 Capper St. London. WC1E 6JA</i></p>
+                </div>
+                <div class="pull-right fnav">
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
-		<section id="moreFeaturesNav" class="blueBackground">
-		<a name="moreFeaturesNav"></a>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.js"></script>
 
-			<div id="moreFeaturesContainer" class="whiteColor normalFont">
-				<div class="moreFeatureContainer">
-					<div class="moreFeatureText floatRight">ReBeats isn’t supposed to look like a lesson and it’s not meant to replace them - it’s meant to give you a great and fun way to practise reading and listening, while being exposed to real world English.</div>
-					<div class="moreFeatureImage floatLeft">
-						<img src="assets/img/foto1.png">
-					</div>
-				</div>
+        <script src="js/owl.carousel.js"></script>
 
-				<div class="moreFeatureContainer">
-					<div class="moreFeatureText floatLeft">You’ll learn to recognise how words are spelt, how they fit correctly into a sentence and what they mean in context.</div>
-					<div class="moreFeatureImage floatRight">
-						<img src="assets/img/foto2.png">
-					</div>
-				</div>
-				
-				<div class="moreFeatureContainer">
-					<div class="moreFeatureText floatRight">Music and having fun both help your brain to remember things much more easily and the best bit is, you won’t even know you’re learning!</div>
-					<div class="moreFeatureImage floatLeft">
-						<img src="assets/img/foto3.png">
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-		
-		<section id="rebeatsIsNav">
-		<a name="rebeatsIsNav"></a>
-
-			<div id="rebeatsIsTitle" class="bigFont boldStyle">What is ReBeats?</div>
-			
-			<div class="rebeatsIsTextBox normalFont">We know that learning English can be hard and boring, so we challenged ourselves to create something so fun and easy that all the learning happens without even realising. That’s how ReBeats was born; a game that improves your English by watching your favourite music videos on YouTube - a Spotify for language learning.</div>
-			
-			<hr align="center" width="70%" noshade size="1px">
-			
-			<div id="quotes">
-
-				<div id="quote1" class="quote"></div>
-				<div id="quote2" class="quote"></div>
-				<div id="quote3" class="quote"></div>
-
-			</div>
-
-			<hr align="center" width="70%" noshade size="1px">
-
-			<div  class="rebeatsIsTextBox normalFont">Each one of us learns in his or her own ways, and the best way to learn something is to enjoy it, and to want do it again. The best learning doesn’t feel like studying at all; it just feels good. Our personal passions - whether it be music, film or football - are filled with fantastic language that can motivate us better than any coursebook. So forget studying, and start learning through what you love.</div>
-			
-			<!-- JS functions called by the section one -->
-				<script language="javascript">
-							scrollQuote();
-				</script>
-		</section>
-
-		<footer>
-			<div class="logos">
-				<img src="assets/img/tonguesten-logo-footer.png">
-				<a href="http://wayra.org/unltd/" target="_blank"><img src="assets/img/wayra-logo.png"></a>
-			</div>
-
-			<div class="rights smallFont">Copyright © 2014 Tonguesten Limited, All rights reserved. Proud member of the Wayra family. WAYRA UNLTD, 2-10 Capper St, London WC1E 6JA
-			</div>
-			
-			<div class="contacts smallFont">Get in touch: <a href="https://www.facebook.com/weareT10" class="whiteColor bold" target="_blank">FACEBOOK</a>, <a href="https://twitter.com/weareT10" class="whiteColor bold" target="_blank">TWITTER</a>, <a href="mailto:mariaz@tonguesten.com" class="whiteColor bold">EMAIL</a>
-			</div>
-		</footer>
-	</body>
+        <!-- Javascripts
+        ================================================== -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
 </html>
